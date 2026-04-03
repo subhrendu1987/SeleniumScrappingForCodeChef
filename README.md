@@ -6,4 +6,9 @@ pip install selenium webdriver-manager bs4
 #export DISPLAY=:0
 ```
 ## Run code
-* Update USERNAME and PASSWORD in file ` 
+* Run `python3 fetchQuestionTable.py`
+	- Login with your credentials and press enter in the shell
+	- This will extract table sources in the `data/`
+* Check if there are some errors while extractions.
+* Run `python3 parseTable.py`
+	- This will extract the contents of table into `parsed_problems.csv`

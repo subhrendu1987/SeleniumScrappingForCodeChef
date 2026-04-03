@@ -60,6 +60,7 @@ def fetch_and_save_table(driver, contest_code, output_dir="data", timeout=10):
 
     except Exception as e:
         print(f"❌ Failed for {contest_code}: {e}")
+        print(f"check -> {url}")
         return False
 
 # ✅ Read first N contest codes
@@ -96,7 +97,7 @@ def main():
         input("Login manually, then press ENTER...")
 
         # 📥 Read contest codes (first 3)
-        contest_codes = read_contest_codes(CSV_FILE, limit=3)
+        contest_codes = read_contest_codes(CSV_FILE, limit=26)
 
         print("Processing contests:", contest_codes)
 
