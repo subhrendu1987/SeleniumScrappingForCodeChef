@@ -12,3 +12,5 @@ pip install selenium webdriver-manager bs4
 * Check if there are some errors while extractions.
 * Run `python3 parseTable.py`
 	- This will extract the contents of table into `parsed_problems.csv`
+* Run `python3 groupProblemCodes.py`
+	- this will consolidate the Question IDs into `grouped_problems.csv`
