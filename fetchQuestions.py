@@ -14,8 +14,8 @@ from selenium.webdriver.support import expected_conditions as EC
 CSV_FILE = "grouped_problems.csv"
 OUTPUT_DIR = "problems"
 
-BASE_URL = "https://www.codechef.com/THADAA/problems/{}"
-MAX_DOWNLOADS = 10     #+ve to fix limit; -1 to download all
+BASE_URL = "https://www.codechef.com/THADAA/problems/{}" # Provided by Codechef
+MAX_DOWNLOADS = -1     #+ve to fix limit; -1 to download all
 
 
 OUTPUT_HTML_DIR = "problems/html"
@@ -23,6 +23,20 @@ OUTPUT_PDF_DIR = "problems/pdf"
 
 os.makedirs(OUTPUT_HTML_DIR, exist_ok=True)
 os.makedirs(OUTPUT_PDF_DIR, exist_ok=True)
+
+import argparse
+
+def parse_args():
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument(
+        "--only-new",
+        action="store_true",
+        help="Download only problems not already downloaded"
+    )
+
+    return parser.parse_args()
+
 
 def setup_driver():
     options = Options()
@@ -58,85 +72,34 @@ def read_problem_ids():
 
     return sorted(problem_ids)
 
-import os
-import time
-import base64
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-OUTPUT_HTML_DIR = "problems/html"
-OUTPUT_PDF_DIR = "problems/pdf"
-
-os.makedirs(OUTPUT_HTML_DIR, exist_ok=True)
-os.makedirs(OUTPUT_PDF_DIR, exist_ok=True)
-
-
-def save_problem(driver, pid):
+def save_problem(driver, problem_id, only_new=False):
     try:
-        print(f"Processing {pid}")
+        html_path = os.path.join(OUTPUT_HTML_DIR, f"{problem_id}.html")
+        pdf_path = os.path.join(OUTPUT_PDF_DIR, f"{problem_id}.pdf")
 
-        url = f"https://www.codechef.com/THADAA/problems/{pid}"
-        driver.get(url)
+        # 🔥 Skip if already downloaded
+        if only_new and os.path.exists(html_path) and os.path.exists(pdf_path):
+            print(f"⏭ Skipping {problem_id} (already exists)")
+            return
 
-        # wait for problem statement
-        WebDriverWait(driver, 15).until(
-            EC.presence_of_element_located((By.ID, "problem-statement"))
-        )
-
-        time.sleep(2)  # allow full render
-
-        # 🔥 Extract HTML
-        element = driver.find_element(By.ID, "problem-statement")
-        html_content = element.get_attribute("outerHTML")
-
-        # ✅ Save HTML
-        html_path = os.path.join(OUTPUT_HTML_DIR, f"{pid}.html")
-        with open(html_path, "w", encoding="utf-8") as f:
-            f.write(html_content)
-
-        # 🔥 Inject clean styling for PDF
-        driver.execute_script("""
-            var style = document.createElement('style');
-            style.innerHTML = `
-                * {
-                    background: white !important;
-                    color: black !important;
-                }
-                pre, code {
-                    background: #f5f5f5 !important;
-                }
-            `;
-            document.head.appendChild(style);
-        """)
-
-        time.sleep(1)
-
-        # ✅ Generate PDF
-        pdf = driver.execute_cdp_cmd("Page.printToPDF", {
-            "printBackground": True
-        })
-
-        pdf_path = os.path.join(OUTPUT_PDF_DIR, f"{pid}.pdf")
-        with open(pdf_path, "wb") as f:
-            f.write(base64.b64decode(pdf['data']))
-
-        print(f"Saved HTML + PDF for {pid}")
-
-    except Exception as e:
-        print(f"Error for {pid}: {e}")
-
-def save_pdf(driver, problem_id):
-    try:
         url = BASE_URL.format(problem_id)
         print(f"➡ {problem_id}")
 
         driver.get(url)
+        print(f"URL= {url}")
 
         # 🔹 Wait for problem statement
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "problem-statement"))
         )
+
+        # 🔹 Extract HTML BEFORE modifying DOM
+        element = driver.find_element(By.ID, "problem-statement")
+        html_content = element.get_attribute("outerHTML")
+
+        # ✅ Save HTML
+        with open(html_path, "w", encoding="utf-8") as f:
+            f.write(html_content)
 
         # 🔹 Keep only problem content
         driver.execute_script("""
@@ -151,20 +114,26 @@ def save_pdf(driver, problem_id):
             "printBackground": True
         })
 
-        file_path = os.path.join(
-            OUTPUT_DIR, f"{problem_id}.pdf"
-        )
-
-        with open(file_path, "wb") as f:
+        # ✅ Save PDF
+        with open(pdf_path, "wb") as f:
             f.write(base64.b64decode(pdf['data']))
 
-        print(f"✅ Saved {problem_id}.pdf")
+        print(f"✅ Saved {problem_id}.html + .pdf")
 
     except Exception as e:
         print(f"❌ Failed {problem_id}: {e}")
 
-
 def main():
+    args = parse_args()
+
+    DOWNLOAD_ONLY_NEW = args.only_new  # 🔥 flag
+
+    driver = setup_driver()
+
+    problem_ids = read_problem_ids()
+
+    for pid in problem_ids:
+
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     driver = setup_driver()
@@ -182,7 +151,9 @@ def main():
             
         try:
             #save_pdf(driver, pid)
-            save_problem(driver, pid)
+            #save_problem(driver, pid)
+            save_problem(driver, pid, DOWNLOAD_ONLY_NEW)
+
             count += 1
 
         except Exception as e:
