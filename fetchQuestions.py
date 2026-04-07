@@ -125,25 +125,15 @@ def save_problem(driver, problem_id, only_new=False):
 
 def main():
     args = parse_args()
-
     DOWNLOAD_ONLY_NEW = args.only_new  # 🔥 flag
-
     driver = setup_driver()
-
     problem_ids = read_problem_ids()
-
-    for pid in problem_ids:
-
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-
     driver = setup_driver()
     wait_for_manual_login(driver)
-
     problem_ids = read_problem_ids()
     print("Problems:",problem_ids)
-
     count = 0
-
     for pid in problem_ids:
         if MAX_DOWNLOADS != -1 and count >= MAX_DOWNLOADS:
             print("Download limit reached")
