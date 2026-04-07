@@ -14,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 CSV_FILE = "grouped_problems.csv"
 OUTPUT_DIR = "problems"
 
-BASE_URL = "https://www.codechef.com/THADAA/problems/{}" # Provided by Codechef
+BASE_URL = "https://www.codechef.com/THADAA/problems/{}" # Provided by Codechef 
 MAX_DOWNLOADS = -1     #+ve to fix limit; -1 to download all
 
 
