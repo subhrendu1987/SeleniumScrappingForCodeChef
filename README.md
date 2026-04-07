@@ -1,9 +1,11 @@
 # Selenium scrapper for CodeChef
-## Install and Configure selenium
+## Install and Configure selenium with Chrome driver in Ubuntu
+* Tested on Ubuntu 22.04-LTS
 ```
+sudo apt install wkhtmltopdf
+sudo apt install chromium-chromedriver
 pip install selenium webdriver-manager bs4
-#export MOZ_ENABLE_WAYLAND=0
-#export DISPLAY=:0
+pip install pdfkit
 ```
 ## Run code
 * Run `python3 fetchQuestionTable.py`
@@ -14,3 +16,5 @@ pip install selenium webdriver-manager bs4
 	- This will extract the contents of table into `parsed_problems.csv`
 * Run `python3 groupProblemCodes.py`
 	- this will consolidate the Question IDs into `grouped_problems.csv`
+* Run `python3 fetchQuestions.py`
+	- this will place the convert the problem statements into PDF and place them in `problems/`
