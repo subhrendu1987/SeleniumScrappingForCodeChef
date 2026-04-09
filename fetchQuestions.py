@@ -20,6 +20,7 @@ MAX_DOWNLOADS = -1     #+ve to fix limit; -1 to download all
 
 OUTPUT_HTML_DIR = "problems/html"
 OUTPUT_PDF_DIR = "problems/pdf"
+FAILED_TO_DOWNLOAD=[]
 
 os.makedirs(OUTPUT_HTML_DIR, exist_ok=True)
 os.makedirs(OUTPUT_PDF_DIR, exist_ok=True)
@@ -68,7 +69,10 @@ def read_problem_ids():
             # skip first column (ContestCode)
             for value in row[1:]:
                 if value and value.strip():
-                    problem_ids.add(value.strip())
+                    if value.strip().startswith("THAPARMCQ"):
+                            continue
+                    else:
+                        problem_ids.add(value.strip())
 
     return sorted(problem_ids)
 
@@ -122,6 +126,8 @@ def save_problem(driver, problem_id, only_new=False):
 
     except Exception as e:
         print(f"❌ Failed {problem_id}: {e}")
+        FAILED_TO_DOWNLOAD.add(problem_id)
+
 
 def main():
     args = parse_args()
@@ -129,7 +135,6 @@ def main():
     driver = setup_driver()
     problem_ids = read_problem_ids()
     os.makedirs(OUTPUT_DIR, exist_ok=True)
-    driver = setup_driver()
     wait_for_manual_login(driver)
     problem_ids = read_problem_ids()
     print("Problems:",problem_ids)
@@ -163,6 +168,7 @@ def main():
     driver.quit()
 
     print(f"\n🎯 Total downloaded: {count}")
+    print(f"Failed to Download:",FAILED_TO_DOWNLOAD)
 
 
 if __name__ == "__main__":
