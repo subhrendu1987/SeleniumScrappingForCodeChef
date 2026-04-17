@@ -7,7 +7,7 @@ sudo apt install chromium-chromedriver
 pip install selenium webdriver-manager bs4
 pip install pdfkit
 ```
-## Run code
+## Fetch Assesments
 * Run `python3 fetchQuestionTable.py`
 	- Login with your credentials and press enter in the shell
 	- This will extract table sources in the `data/`
@@ -18,3 +18,9 @@ pip install pdfkit
 	- this will consolidate the Question IDs into `grouped_problems.csv`
 * Run `python3 fetchQuestions.py`
 	- this will place the convert the problem statements into PDF and place them in `problems/`
+
+## Fetch Regular Excercises
+* Run `python3 fetchQuestionTable.py`
+	- Login with your credentials and press enter in the shell
+	- This will extract table sources in the `data/`
+
