@@ -20,10 +20,13 @@ pip install pdfkit
 	- this will place the convert the problem statements into PDF and place them in `problems/`
 
 ## Fetch Regular Excercises
-* Run `python3 fetchQuestionTable.py`
+* Run `python3 fetchURLofExcercises.py`
 	- Login with your credentials and press enter in the shell
-	- This will extract table sources in the `data/`
+	- This will extract URLS in the `Excercise/` folder
 
+* Run `python3 fetchPracticeProblems.py`
+	- Login with your credentials and press enter in the shell
+	- This will extract problems in the `Excercise/` folder
 
 
 div id="problem-statement"
