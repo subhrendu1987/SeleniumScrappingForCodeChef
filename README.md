@@ -20,13 +20,14 @@ pip install pdfkit
 	- this will place the convert the problem statements into PDF and place them in `problems/`
 
 ## Fetch Regular Excercises
+* (If required) Open `Codechef Portal` and update the `CSVs/CodechefTopicURL.tsv` with latest URL of Topics, subtopics, and their base URLs from the course homepage.
+
 * Run `python3 fetchURLofExcercises.py`
 	- Login with your credentials and press enter in the shell
-	- This will extract URLS in the `Excercise/` folder
+	- This will read tpoics and subtopics from `CSVs/CodechefTopicURL.tsv` and extract all URLS in the `CSVs/ProblemURL.tsv`
 
 * Run `python3 fetchPracticeProblems.py`
 	- Login with your credentials and press enter in the shell
 	- This will extract problems in the `Excercise/` folder
-
-
-div id="problem-statement"
+## Extract Problem Name from `HTML`
+* Run `bash extractProblemName.sh <FOLDERNAME>` to extract Problem Title

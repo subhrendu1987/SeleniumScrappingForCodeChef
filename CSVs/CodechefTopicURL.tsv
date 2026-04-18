@@ -1,0 +1,50 @@
+Topic	Subtopic	URL
+Backtracking 	n-Queens problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA45/problems/MDDYQ189
+Backtracking 	Graph Coloring	https://www.codechef.com/learn/course/thapar-daa-2026/COLORGRAPH/problems/GRAPHCOLOR1
+Backtracking 	River Crossing Puzzle	https://www.codechef.com/learn/course/thapar-daa-2026/RIVERCROSS/problems/RIVERCROSS0
+Backtracking 	Math Crossword Puzzle	https://www.codechef.com/learn/course/thapar-daa-2026/MATHCROSS/problems/MATHCROSS1
+Backtracking 	Practice Problems	https://www.codechef.com/learn/course/thapar-daa-2026/BACKTRACKPR/problems/REVSTACKREC
+Graph Fundamentals & Traversal	Terminologies	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA25/problems/GRAPHBASICS
+Graph Fundamentals & Traversal	Types of Graphs	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA26/problems/GRAPHTYPE1
+Graph Fundamentals & Traversal	Graph Representation	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA27/problems/GRAPHDS
+Graph Fundamentals & Traversal	Graph Traversals	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA28/problems/GRAPHTOUR
+Graph Fundamentals & Traversal	Connected Components	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA29/problems/CCDEF
+Graph Fundamentals & Traversal	Cycles in Graphs	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA30/problems/CYCLEDEF
+Graph Fundamentals & Traversal	DFS	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA31/problems/DAA104
+Graph Fundamentals & Traversal	BFS	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA32/problems/DAA110
+Graph Fundamentals & Traversal	Topological sorting	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA33/problems/TOPOSORTDEF
+Graph Fundamentals & Traversal	Hamiltonian Circuit Problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA46/problems/MDDYQ195
+Graph Fundamentals & Traversal	Flow Network	https://www.codechef.com/learn/course/thapar-daa-2026/FLOWNETWORK/problems/FLOWNETMIN
+Graph Fundamentals & Traversal	Practice problems	https://www.codechef.com/learn/course/thapar-daa-2026/GRAPHPRACTIC/problems/GERALD07
+Branch and Bound	Knapsack Problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA48/problems/MDDYQ208
+Branch and Bound	Traveling Salesman Problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA49/problems/MDDYQ215
+Branch and Bound	Assignment problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA50/problems/MDDYQ222
+String matching algorithms	Boyer-Moore Algorithm	https://www.codechef.com/learn/course/thapar-daa-2026/BOYERMOORE1/problems/PATMAT01C
+String matching algorithms	Rabin Karp Algorithm	https://www.codechef.com/learn/course/thapar-daa-2026/RABINKARP/problems/RABINKARP1
+String matching algorithms	KMP Algorithm	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA53/problems/CLGKMP01
+String matching algorithms	Suffix arrays	https://www.codechef.com/learn/course/thapar-daa-2026/SUFFIXARRAY1/problems/SUFFIXARR1
+Greedy techniques	Basics of Greedy, and proofs	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA34/problems/MDDYQ132
+Greedy techniques	Fractional Knapsack	https://www.codechef.com/learn/course/thapar-daa-2026/FRACTIONKNAP/problems/KNAPSACKPR1
+Greedy techniques	Activity selection	https://www.codechef.com/learn/course/thapar-daa-2026/ACTIVITYSELE/problems/ACTIVITYSEL1
+Greedy techniques	Minimum Platforms	https://www.codechef.com/learn/course/thapar-daa-2026/MINPLATFORMS/problems/MINPLATFORM1
+Greedy techniques	Job scheduling problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA37/problems/MDDYQ139
+Greedy techniques	Huffman Trees and codes	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA38/problems/MDDYQ144
+Greedy techniques	Practice problems	https://www.codechef.com/learn/course/thapar-daa-2026/GREEDYPRACTI/problems/COOKIEDIST
+Dynamic Programming	Knapsack problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA40/problems/MDDYQ159
+Dynamic Programming	Longest common subsequence	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA41/problems/MDDYQ168
+Dynamic Programming	Minimum Cost Matrix Chain Multiplication	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA41B/problems/MDDYQ249
+Dynamic Programming	Maximum Independent Set in a Tree	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA41C/problems/MDDYQ256
+Dynamic Programming	Practice problems	https://www.codechef.com/learn/course/thapar-daa-2026/DPPRACTICE/problems/SUBSETTARGET
+Dynamic Programming	FAQs in interview	https://www.codechef.com/learn/course/thapar-daa-2026/DPPRACTICEB/problems/VYISQ01
+Divide and Conquer	Merge sort	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA20/problems/DAA010
+Divide and Conquer	Quick sort	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA21/problems/DAA015
+Divide and Conquer	Randomized quick sort problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA22/problems/MDDYQ235
+Divide and Conquer	Binary Search	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA23/problems/DAA020
+Divide and Conquer	Max subarray sum	https://www.codechef.com/learn/course/thapar-daa-2026/MAXSUBSUM/problems/MAXSUBSUM1
+Divide and Conquer	Peak Elements	https://www.codechef.com/learn/course/thapar-daa-2026/PEAKELEMETS/problems/PEAKELEMENTP
+Divide and Conquer	Practice problems	https://www.codechef.com/learn/course/thapar-daa-2026/DIVANDCONQP/problems/DIVANDCONMUL
+Divide and Conquer	Hybrid Problems	https://www.codechef.com/learn/course/thapar-daa-2026/HYBRIDPROB/problems/MINSUBAR
+Brute Force and Elementary sorting	Selection and Bubble Sort	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA16/problems/DAA004
+Brute Force and Elementary sorting	Decrease & Conquer - Insertion sort	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA17/problems/DAA029
+Brute Force and Elementary sorting	Decrease & Conquer - Computing a Median and the Selection Problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA18/problems/DAA033
+Brute Force and Elementary sorting	Decrease & Conquer - Fake coin problem	https://www.codechef.com/learn/course/thapar-daa-2026/TPRDAA19/problems/DAA040

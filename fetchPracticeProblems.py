@@ -13,7 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-CSV_FILE = "PracticeProblems.tsv"
+CSV_FILE = "CSVs/ProblemURL.tsv"
 OUTPUT_DIR = "Excercise"
 
 OUTPUT_HTML_DIR = os.path.join(OUTPUT_DIR, "html")
@@ -68,46 +68,43 @@ def setup_driver():
 
 
 def wait_for_manual_login(driver):
-    driver.get("https://www.codechef.com/")
+    driver.get("https://www.codechef.com/login?destination=/")
     print("\n🔐 Login manually...")
     input("👉 Press ENTER after login...")
 
 
 # -----------------------------
-# TSV Parsing
+# TSV Parsing (UPDATED)
 # -----------------------------
 def read_problem_entries():
     entries = []
-    current_group = "Ungrouped"
 
     with open(CSV_FILE, "r", encoding="utf-8") as f:
-        reader = csv.reader(f, delimiter="\t")
+        reader = csv.DictReader(f, delimiter="\t")
 
         for row in reader:
-            for cell in row:
-                if not cell or not cell.strip():
-                    continue
+            topic = row["Topic"].strip()
+            subtopic = row["Subtopic"].strip()
+            url = row["URL"].strip()
 
-                value = cell.strip()
-
-                if value.startswith("http"):
-                    entries.append((current_group, value))
-                else:
-                    current_group = value  # group title
+            entries.append((topic, subtopic, url))
 
     return entries
 
 
 # -----------------------------
-# Core logic
+# Core logic (UPDATED)
 # -----------------------------
-def save_problem(driver, url, group, only_new=False):
+def save_problem(driver, url, topic, subtopic, only_new=False):
     try:
         problem_id = get_problem_id_from_url(url)
-        group = sanitize_name(group)
 
-        html_dir = os.path.join(OUTPUT_HTML_DIR, group)
-        pdf_dir = os.path.join(OUTPUT_PDF_DIR, group)
+        topic = sanitize_name(topic)
+        subtopic = sanitize_name(subtopic)
+
+        # Hierarchical directories
+        html_dir = os.path.join(OUTPUT_HTML_DIR, topic, subtopic)
+        pdf_dir = os.path.join(OUTPUT_PDF_DIR, topic, subtopic)
 
         os.makedirs(html_dir, exist_ok=True)
         os.makedirs(pdf_dir, exist_ok=True)
@@ -115,16 +112,20 @@ def save_problem(driver, url, group, only_new=False):
         html_path = os.path.join(html_dir, f"{problem_id}.html")
         pdf_path = os.path.join(pdf_dir, f"{problem_id}.pdf")
 
-        # Skip existing
-        if only_new and os.path.exists(html_path) and os.path.exists(pdf_path):
-            print(f"⏭ Skipping {problem_id}")
-            return
+	# Always skip if both files already exist
+	if os.path.exists(html_path) and os.path.exists(pdf_path):
+	    print(f"⏭ Already exists: {problem_id}")
+	    return
 
-        print(f"➡ [{group}] {problem_id}")
+	# Optional: allow partial re-download logic
+	if only_new and (os.path.exists(html_path) or os.path.exists(pdf_path)):
+	    print(f"⏭ Skipping partial existing: {problem_id}")
+	    return
+        print(f"➡ [{topic} → {subtopic}] {problem_id}")
         driver.get(url)
 
         # Wait for problem statement
-        WebDriverWait(driver, 15).until(
+        WebDriverWait(driver, 20).until(
             EC.presence_of_element_located((By.ID, "problem-statement"))
         )
 
@@ -158,7 +159,7 @@ def save_problem(driver, url, group, only_new=False):
 
 
 # -----------------------------
-# Main
+# Main (UPDATED)
 # -----------------------------
 def main():
     args = parse_args()
@@ -174,13 +175,13 @@ def main():
 
     count = 0
 
-    for group, url in entries:
+    for topic, subtopic, url in entries:
         if MAX_DOWNLOADS != -1 and count >= MAX_DOWNLOADS:
             print("Download limit reached")
             break
 
         try:
-            save_problem(driver, url, group, DOWNLOAD_ONLY_NEW)
+            save_problem(driver, url, topic, subtopic, DOWNLOAD_ONLY_NEW)
             count += 1
 
         except Exception as e:

@@ -13,8 +13,8 @@ from selenium.webdriver.support import expected_conditions as EC
 # -----------------------------
 # Files
 # -----------------------------
-INPUT_TSV = "CodechefTopicURL.tsv"
-OUTPUT_TSV = "ProblemURL.tsv"
+INPUT_TSV = "CSVs/CodechefTopicURL.tsv"
+OUTPUT_TSV = "CSVs/ProblemURL.tsv"
 
 
 # -----------------------------

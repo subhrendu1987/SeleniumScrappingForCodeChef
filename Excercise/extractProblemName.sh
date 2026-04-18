@@ -11,5 +11,5 @@ for file in "$DIR"/*.html; do
     [ -e "$file" ] || continue   # handle no matches
 
     name=$(grep -oP '<h3 class="notranslate">\K[^<]+' "$file" | head -n 1)
-    echo "$(basename "$file") -> $name"
+    echo "$(basename "$file")	$name"
 done
