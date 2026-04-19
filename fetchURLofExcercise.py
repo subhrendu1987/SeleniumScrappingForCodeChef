@@ -49,7 +49,7 @@ def setup_driver():
 
 
 def wait_for_manual_login(driver):
-    driver.get("https://www.codechef.com/")
+    driver.get("https://www.codechef.com/login?destination=/")
     print("\n🔐 Please login manually in the opened browser...")
     input("👉 Press ENTER after login...")
 

@@ -112,15 +112,15 @@ def save_problem(driver, url, topic, subtopic, only_new=False):
         html_path = os.path.join(html_dir, f"{problem_id}.html")
         pdf_path = os.path.join(pdf_dir, f"{problem_id}.pdf")
 
-	# Always skip if both files already exist
-	if os.path.exists(html_path) and os.path.exists(pdf_path):
-	    print(f"⏭ Already exists: {problem_id}")
-	    return
+        # Always skip if both files already exist
+        if os.path.exists(html_path) and os.path.exists(pdf_path):
+            print(f"⏭ Already exists: {problem_id}")
+            return
 
-	# Optional: allow partial re-download logic
-	if only_new and (os.path.exists(html_path) or os.path.exists(pdf_path)):
-	    print(f"⏭ Skipping partial existing: {problem_id}")
-	    return
+        # Optional: allow partial re-download logic
+        if only_new and (os.path.exists(html_path) or os.path.exists(pdf_path)):
+            print(f"⏭ Skipping partial existing: {problem_id}")
+            return
         print(f"➡ [{topic} → {subtopic}] {problem_id}")
         driver.get(url)
 
