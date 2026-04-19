@@ -30,4 +30,6 @@ pip install pdfkit
 	- Login with your credentials and press enter in the shell
 	- This will extract problems in the `Excercise/` folder
 ## Extract Problem Name from `HTML`
-* Run `bash extractProblemName.sh <FOLDERNAME>` to extract Problem Title
+* Consult help `bash extractProblemName.sh --help` 
+* Run `bash extractProblemName.sh <FOLDERNAME>` to extract Problem Titles from a given folder.
+* Run `bash extractProblemName.sh <TSV-FILENAME>` to extract Problem Titles from a given TSV file.
