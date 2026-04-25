@@ -2,7 +2,7 @@ import csv
 from collections import defaultdict
 
 INPUT_FILE = "parsed_problems.csv"
-OUTPUT_FILE = "grouped_problems.csv"
+OUTPUT_FILE = "grouped_problems.tsv"
 
 
 def group_problem_codes():
@@ -29,7 +29,7 @@ def save_grouped_data(grouped):
     headers = ["ContestCode"] + [f"P{i+1}" for i in range(max_problems)]
 
     with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
-        writer = csv.writer(f)
+        writer = csv.writer(f,delimiter="\t")
         writer.writerow(headers)
 
         for contest, problems in grouped.items():
@@ -47,6 +47,7 @@ def save_grouped_data(grouped):
 
 def main():
     grouped = group_problem_codes()
+    print(grouped)
     save_grouped_data(grouped)
 
 

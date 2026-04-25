@@ -11,15 +11,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-CSV_FILE = "grouped_problems.csv"
-OUTPUT_DIR = "problems"
+CSV_FILE = "grouped_problems.tsv"
+OUTPUT_DIR = "contest"
 
-BASE_URL = "https://www.codechef.com/THADAA/problems/{}" # Provided by Codechef 
+#BASE_URL = "https://www.codechef.com/THADAA/problems/{}" # Provided by Codechef 
+BASE_URL="https://www.codechef.com/I5P77/problems/{}" # Provided by Codechef 
 MAX_DOWNLOADS = -1     #+ve to fix limit; -1 to download all
 
 
-OUTPUT_HTML_DIR = "problems/html"
-OUTPUT_PDF_DIR = "problems/pdf"
+OUTPUT_HTML_DIR = OUTPUT_DIR+"/html"
+OUTPUT_PDF_DIR = OUTPUT_DIR+"/pdf"
 FAILED_TO_DOWNLOAD=[]
 
 os.makedirs(OUTPUT_HTML_DIR, exist_ok=True)
@@ -34,6 +35,11 @@ def parse_args():
         "--only-new",
         action="store_true",
         help="Download only problems not already downloaded"
+    )
+    parser.add_argument(
+        "--mcq",
+        action="store_true",
+        help="Download MCQs also"
     )
 
     return parser.parse_args()
@@ -57,22 +63,22 @@ def wait_for_manual_login(driver):
     input("👉 Press ENTER after login...")
 
 
-def read_problem_ids():
+def read_problem_ids(DOWNLOAD_MCQ):
     problem_ids = set()
 
     with open(CSV_FILE, "r", encoding="utf-8") as f:
         reader = csv.reader(f, delimiter="\t")
 
         next(reader)  # 🔥 skip header row
-
-        for row in reader:
-            # skip first column (ContestCode)
-            for value in row[1:]:
-                if value and value.strip():
-                    if value.strip().startswith("THAPARMCQ"):
-                            continue
-                    else:
-                        problem_ids.add(value.strip())
+        if(DOWNLOAD_MCQ):
+            for row in reader:
+                # skip first column (ContestCode)
+                for value in row[1:]:
+                    if value and value.strip():
+                        if value.strip().startswith("THAPARMCQ"):
+                                continue
+                        else:
+                            problem_ids.add(value.strip())
 
     return sorted(problem_ids)
 
@@ -132,8 +138,9 @@ def save_problem(driver, problem_id, only_new=False):
 def main():
     args = parse_args()
     DOWNLOAD_ONLY_NEW = args.only_new  # 🔥 flag
+    DOWNLOAD_MCQ=args.mcq
     driver = setup_driver()
-    problem_ids = read_problem_ids()
+    problem_ids = read_problem_ids(DOWNLOAD_MCQ)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     wait_for_manual_login(driver)
     problem_ids = read_problem_ids()

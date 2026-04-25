@@ -17,7 +17,8 @@ pip install pdfkit
 * Run `python3 groupContestProblemCodes.py`
 	- this will consolidate the Question IDs into `grouped_problems.csv`
 * Run `python3 fetchQuestions.py`
-	- this will place the convert the problem statements into PDF and place them in `problems/`
+	- this will place the convert the problem statements into PDF and place them in `contest/`
+* To merge PDFs, you can use `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf pdfs/*.pdf`
 
 ## Fetch Regular Excercises
 * (If required) Open `Codechef Portal` and update the `CSVs/CodechefTopicURL.tsv` with latest URL of Topics, subtopics, and their base URLs from the course homepage.
