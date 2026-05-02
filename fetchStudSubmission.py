@@ -12,41 +12,55 @@ from bs4 import BeautifulSoup
 
 from auth import wait_for_manual_login
 
-def parse_tablebox_table(html):
-    """
-    Extracts table inside <div class="tablebox"> with <table class="dataTable">
-    Returns: list of rows (each row = list of cell text)
-    """
+from bs4 import BeautifulSoup
 
+def parse_tablebox_table(html):
     soup = BeautifulSoup(html, "html.parser")
 
-    # 🔹 Find the div
-    div = soup.find("div", class_="tablebox")
-    if not div:
-        return []
-
-    # 🔹 Find the table
-    table = div.find("table", class_="dataTable")
+    # 🔹 Locate table
+    table = soup.select_one("div.tablebox table.dataTable")
     if not table:
-        return []
+        return None
 
-    parsed_data = []
+    # 🔹 Go inside tbody → first row
+    tbody = table.find("tbody")
+    if not tbody:
+        return None
 
-    # 🔹 Extract rows
-    for tr in table.find_all("tr"):
-        row = []
+    first_row = tbody.find("tr")
+    if not first_row:
+        return None
 
-        # handle both th and td
-        cells = tr.find_all(["th", "td"])
+    cells = first_row.find_all("td")
 
-        for cell in cells:
-            text = cell.get_text(strip=True)
-            row.append(text)
+    if len(cells) < 10:
+        return None
 
-        if row:
-            parsed_data.append(row)
+    # 🔹 Extract structured fields
+    data = {
+        "id": cells[0].get_text(strip=True),
+        "datetime": cells[1].get_text(strip=True),
+        "username": cells[2].get_text(strip=True),
+        "problem_code": cells[3].get_text(strip=True),
+        "contest_code": cells[4].get_text(strip=True),
 
-    return parsed_data
+        # ⭐ IMPORTANT: result is inside nested span → use title
+        "result": (
+            cells[5].find("span").get("title", "").strip()
+            if cells[5].find("span") else ""
+        ),
+
+        "time": cells[6].get_text(strip=True),
+        "memory": cells[7].get_text(strip=True),
+        "language": cells[8].get_text(strip=True),
+
+        # 🔹 Extract solution link
+        "solution_link": (
+            cells[9].find("a")["href"]
+            if cells[9].find("a") else ""
+        )
+    }
+    return data.get("id", "NA") or "NA"
 
 
 def parse_args():
@@ -144,10 +158,13 @@ def main():
 
         html1 = fetch_html(driver, url1)
         table_data1 = parse_tablebox_table(html1)
+        table_data1 = table_data1 or "NA"
         html2 = fetch_html(driver, url2)
         table_data2 = parse_tablebox_table(html2)
-
+        table_data2 = table_data2 or "NA"
+        
         output_rows.append([roll, table_data1, table_data2])
+        print([roll, table_data1, table_data2])
 
         time.sleep(2)
 
