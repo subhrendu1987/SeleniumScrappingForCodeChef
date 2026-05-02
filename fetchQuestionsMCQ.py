@@ -21,10 +21,12 @@ MAX_DOWNLOADS = -1     #+ve to fix limit; -1 to download all
 
 OUTPUT_HTML_DIR = OUTPUT_DIR+"/html"
 OUTPUT_PDF_DIR = OUTPUT_DIR+"/pdf"
+OUTPUT_PNG_DIR = OUTPUT_DIR+"/png"
 FAILED_TO_DOWNLOAD=[]
 
 os.makedirs(OUTPUT_HTML_DIR, exist_ok=True)
 os.makedirs(OUTPUT_PDF_DIR, exist_ok=True)
+os.makedirs(OUTPUT_PNG_DIR, exist_ok=True)
 
 import argparse
 
@@ -60,12 +62,28 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import base64
 
-def save_page_as_pdf(driver, pid, DOWNLOAD_ONLY_NEW):
+def auto_scroll(driver):
+    last_height = driver.execute_script("return document.body.scrollHeight")
+
+    while True:
+        # Scroll to bottom
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+
+        new_height = driver.execute_script("return document.body.scrollHeight")
+
+        if new_height == last_height:
+            break
+
+        last_height = new_height
+
+def save_page_as_pdf(driver, problem_id, DOWNLOAD_ONLY_NEW=False,zoom="80%"):
     try:
         html_path = os.path.join(OUTPUT_HTML_DIR, f"{problem_id}.html")
         pdf_path = os.path.join(OUTPUT_PDF_DIR, f"{problem_id}.pdf")
+        png_path = os.path.join(OUTPUT_PNG_DIR, f"{problem_id}.png")
         # 🔥 Skip if already downloaded
-        if only_new and os.path.exists(html_path) and os.path.exists(pdf_path):
+        if DOWNLOAD_ONLY_NEW and os.path.exists(html_path) and os.path.exists(pdf_path):
             print(f"⏭ Skipping {problem_id} (already exists)")
             return
 
@@ -76,27 +94,41 @@ def save_page_as_pdf(driver, pid, DOWNLOAD_ONLY_NEW):
         # Optional: wait for page to fully load
         driver.implicitly_wait(5)
 
-        # Use Chrome DevTools Protocol to print as PDF
-        pdf = driver.execute_cdp_cmd(
-            "Page.printToPDF",
-            {
-                "printBackground": True,
-                "paperWidth": 8.27,   # A4 width in inches
-                "paperHeight": 11.69, # A4 height in inches
-                "marginTop": 0.4,
-                "marginBottom": 0.4,
-                "marginLeft": 0.4,
-                "marginRight": 0.4,
-            },
-        )
+        # wait for JS/content to load
+        time.sleep(3)
 
-        with open(output_path, "wb") as f:
-            f.write(base64.b64decode(pdf['data']))
+                # Make browser fullscreen/maximized
+        driver.maximize_window()
+        time.sleep(1)
 
-        print(f"Saved PDF to {output_path}")
+        # Set page zoom
+        driver.execute_script(f"document.body.style.zoom='{zoom}'")
+        time.sleep(2)
+
+        # Optional: auto-scroll to force lazy loading
+        last_height = driver.execute_script("return document.body.scrollHeight")
+
+        while True:
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            time.sleep(2)
+
+            new_height = driver.execute_script("return document.body.scrollHeight")
+            if new_height == last_height:
+                break
+
+            last_height = new_height
+
+        # Return to top before capture
+        driver.execute_script("window.scrollTo(0, 0)")
+        time.sleep(1)
+
+        # Save screenshot
+        driver.save_screenshot(png_path)
+        print(f"Saved PDF to {png_path}")
 
     finally:
-        driver.quit()
+        input("👉 Press ENTER to download Next")
+        return
 
 
 def wait_for_manual_login(driver):
@@ -184,7 +216,6 @@ def main():
     problem_ids = read_problem_ids(DOWNLOAD_MCQ)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
     wait_for_manual_login(driver)
-    problem_ids = read_problem_ids()
     print("Problems:",problem_ids)
     count = 0
     for pid in problem_ids:
