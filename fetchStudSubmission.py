@@ -253,9 +253,12 @@ def main():
             new_url = modify_url(url1, condition=False)
             html1 = fetch_html(driver, new_url)
             all_assessments=parse_all_assesments(html1)
-            
             output_rows.append([roll, json.dumps(all_assessments)])
             print([roll, json.dumps(all_assessments)])
+            if args.debug:
+                print("🐞 Debug mode ON — wait to continue.")
+                input("Press ENTER to continue...")
+            continue
 
         # Fetch the student code
         if(table_data1!="NA"):
