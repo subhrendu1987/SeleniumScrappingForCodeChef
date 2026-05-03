@@ -249,28 +249,33 @@ def main():
         html2 = fetch_html(driver, url2)
         table_data2 = parse_tablebox_table(html2)
         table_data2 = table_data2 or "NA"
-        if(table_data1!="NA" and table_data2!="NA"):
+        # Check if the student appeared in a different contest or not
+        if(table_data1=="NA" and table_data2=="NA"):
             new_url = modify_url(url1, condition=False)
             html1 = fetch_html(driver, new_url)
             all_assessments=parse_all_assesments(html1)
-            output_rows.append([roll, json.dumps(all_assessments)])
-            print([roll, json.dumps(all_assessments)])
+            output_rows.append([roll, html1,json.dumps(all_assessments)])
+            if args.debug:
+                print([roll, json.dumps(all_assessments)])
             if args.debug:
                 print("🐞 Debug mode ON — wait to continue.")
                 input("Press ENTER to continue...")
             continue
 
         # Fetch the student code
+        code1 = None
+        code2 = None
         if(table_data1!="NA"):
             studentsub1=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data1)
             code1=extract_code_from_html(studentsub1)
         if(table_data2!="NA"):
             studentsub2=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data2)
             code2=extract_code_from_html(studentsub2)
-
-        
+        code1 = code1 or "NA"
+        code2 = code2 or "NA"
         output_rows.append([roll, "https://www.codechef.com/viewsolution/"+table_data1, code1, "https://www.codechef.com/viewsolution/"+table_data2, code2])
-        print([roll, table_data1, code1, table_data2, code2])
+        if args.debug:
+            print([roll, table_data1, code1, table_data2, code2])
 
         time.sleep(2)
 
