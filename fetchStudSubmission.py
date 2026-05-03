@@ -239,6 +239,7 @@ def main():
     input_rows = read_input_tsv(args.input)
 
     output_rows = []
+    rechecklist=[]
 
     for roll, url1, url2 in input_rows:
         print(f"➡ Processing Roll: {roll}")
@@ -254,7 +255,8 @@ def main():
             new_url = modify_url(url1, condition=False)
             html1 = fetch_html(driver, new_url)
             all_assessments=parse_all_assesments(html1)
-            output_rows.append([roll, html1,json.dumps(all_assessments)])
+            output_rows.append([roll, all_assessments,json.dumps(all_assessments)])
+            rechecklist.append([(roll, new_url)])
             if args.debug:
                 print([roll, json.dumps(all_assessments)])
             if args.debug:
@@ -267,12 +269,14 @@ def main():
         code2 = None
         if(table_data1!="NA"):
             studentsub1=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data1)
+
             code1=extract_code_from_html(studentsub1)
         if(table_data2!="NA"):
             studentsub2=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data2)
             code2=extract_code_from_html(studentsub2)
         code1 = code1 or "NA"
         code2 = code2 or "NA"
+        print("https://www.codechef.com/viewsolution/"+table_data1, "https://www.codechef.com/viewsolution/"+table_data2)
         output_rows.append([roll, "https://www.codechef.com/viewsolution/"+table_data1, code1, "https://www.codechef.com/viewsolution/"+table_data2, code2])
         if args.debug:
             print([roll, table_data1, code1, table_data2, code2])
@@ -281,6 +285,7 @@ def main():
 
     write_output_tsv(args.output, output_rows)
     print(f"\n Done. Output saved to {args.output}")
+    print(rechecklist)
 
     if args.debug:
         print("🐞 Debug mode ON — browser will stay open.")
