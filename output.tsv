@@ -1,3 +1,183 @@
-Roll	HTML1	HTML2
-1024030451	1254962826	1254962964
-1024030468	NA	1254965486
+Roll	Link1	HTML1	Link2	HTML2
+1024030451	https://www.codechef.com/viewsolution/1254962826	"#include <bits/stdc++.h>
+using namespace std;
+
+int solve(int idx,int i,int j,int k,int dist,int turns){
+ if(idx == turns && i == j && j== k){
+  return 1;
+ }
+ 
+ if(j>i || k>j){
+  return 0;
+ }
+ 
+ if( (i-j) > dist || (j-k) > dist ){
+  return 0;
+ }
+ 
+ if(idx == turns && (i !=j || j!= k)){
+  return 0;
+ }
+ 
+ int first = 0;
+ int second= 0;
+ int third = 0;
+ 
+ for(int z = 1;z<=dist;z++){
+  first += solve(idx+1,i+z,j,k,dist,turns);
+  second += solve(idx+1,i,j+z,k,dist,turns);
+  third += solve(idx+1,i,j,k+z,dist,turns);
+ }
+
+ return (first+second+third);
+ 
+}
+
+int main() {
+ int d,k;
+ cin >> d >> k;
+ 
+ int answ = solve(0,0,0,0,d,k);
+ cout << answ;
+ return 0;
+}
+"	https://www.codechef.com/viewsolution/1254962964	"vector<int> scheduleTasks(vector<int>& taskDeadlines, vector<int>& taskRewards) {
+ 
+ int n = taskDeadlines.size();
+ priority_queue< pair<int,int> > pq;
+ for(int i=0;i<n;i++){
+  pq.push({taskRewards[i],taskDeadlines[i]});
+ }
+ 
+ int maxdead = 0;
+ for(int i=0;i<n;i++){
+  maxdead = max(maxdead,taskDeadlines[i]);
+ }
+ 
+ maxdead = maxdead+1;
+ 
+ vector<int> slot(maxdead,0);
+ slot[0] = 1;
+ 
+ int count = 0;
+ int profit = 0;
+ 
+ while(!pq.empty()){
+  auto top = pq.top();
+  pq.pop();
+  
+  int start = top.second;
+  int p = top.first;
+  
+  for(int i=start;i>=0;i--){
+   if(slot[i] == 0){
+    slot[i] = 1;
+    count++;
+    profit = profit + p;
+    break;
+   }
+  }
+ }
+ return {count,profit};
+} 
+
+"
+1024030468	https://www.codechef.com/viewsolution/NA	"#include <bits/stdc++.h>
+using namespace std;
+
+int solve(int idx,int i,int j,int k,int dist,int turns){
+ if(idx == turns && i == j && j== k){
+  return 1;
+ }
+ 
+ if(j>i || k>j){
+  return 0;
+ }
+ 
+ if( (i-j) > dist || (j-k) > dist ){
+  return 0;
+ }
+ 
+ if(idx == turns && (i !=j || j!= k)){
+  return 0;
+ }
+ 
+ int first = 0;
+ int second= 0;
+ int third = 0;
+ 
+ for(int z = 1;z<=dist;z++){
+  first += solve(idx+1,i+z,j,k,dist,turns);
+  second += solve(idx+1,i,j+z,k,dist,turns);
+  third += solve(idx+1,i,j,k+z,dist,turns);
+ }
+
+ return (first+second+third);
+ 
+}
+
+int main() {
+ int d,k;
+ cin >> d >> k;
+ 
+ int answ = solve(0,0,0,0,d,k);
+ cout << answ;
+ return 0;
+}
+"	https://www.codechef.com/viewsolution/1254965486	"#include <iostream>
+using namespace std;
+
+vector<int> scheduleTasks(vector<int>& taskDeadlines, vector<int>& taskRewards) {
+ 
+ vector <int> ans;
+ vector<pair><int,int> task; 
+ 
+ for(int i = 0; i<taskDeadlines.size(){
+  task.push_back(taskRewards[i], taskDeadlines[i]);
+ }
+ 
+ 
+ vector <int> timeslots;
+ sort(taskRewards.begin(), taskRewards.end());
+ 
+ int maxdead= 0; 
+ 
+ for (int i = 0; i< taskDeadlines.size(); i++){
+  maxdead = max(maxdead, taskDeadlines[i]);
+  
+ }
+ 
+ vector <int> slots(maxdead + 1, -1);
+ 
+ int sum1 = 0; int sum2 = 0;
+ for(int i = 0; i< taskDeadlines.size(); i++){
+  if(slots[task[i].second == 1]);
+  sum1 += 1;
+  sum2 += task.first;
+  slots[task[i].second] = 1;
+ }
+ 
+ ans.push_push_back(sum1);
+ ans.push_back(sum2);
+ 
+}
+
+
+int main(){
+ 
+ int n;
+ cout<<""enter number of tasks""<<endl;
+ cin>>n;
+ 
+ vector <int> taskDeadlines[n];
+ vector <int> taskRewards[n];
+ 
+ cout<<""enter deadline and reward for tasks""<<endl;
+ for(int i = 0; i<n; i++){
+  cin>>taskDeadlines[i];
+  cin>>taskRewards[i]
+ }
+ 
+ 
+}
+"

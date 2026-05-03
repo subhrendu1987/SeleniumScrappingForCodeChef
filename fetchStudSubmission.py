@@ -12,7 +12,33 @@ from bs4 import BeautifulSoup
 
 from auth import wait_for_manual_login
 
-from bs4 import BeautifulSoup
+# Extract code from assessment page
+def extract_code_from_html(html):
+    soup = BeautifulSoup(html, "html.parser")
+
+    editor = soup.find("div", id="submit-ide-v2")
+    if not editor:
+        return ""
+
+    text_layer = editor.find("div", class_="ace_text-layer")
+    if not text_layer:
+        return ""
+
+    lines = text_layer.find_all("div", class_="ace_line")
+
+    code_lines = []
+    for line in lines:
+        # Get text from all nested spans properly
+        #text = "".join(line.stripped_strings)
+        text = "".join(line.strings)
+
+        # Preserve empty lines
+        if text == "":
+            code_lines.append("")
+        else:
+            code_lines.append(text)
+
+    return "\n".join(code_lines)
 
 def parse_tablebox_table(html):
     soup = BeautifulSoup(html, "html.parser")
@@ -137,7 +163,7 @@ def write_output_tsv(output_file, rows):
         writer = csv.writer(f, delimiter="\t")
 
         # header
-        writer.writerow(["Roll", "HTML1", "HTML2"])
+        writer.writerow(["Roll","Link1","HTML1","Link2" ,"HTML2"])
 
         for row in rows:
             writer.writerow(row)
@@ -162,9 +188,17 @@ def main():
         html2 = fetch_html(driver, url2)
         table_data2 = parse_tablebox_table(html2)
         table_data2 = table_data2 or "NA"
+        # Fetch the student code
+        if(table_data1!="NA"):
+            studentsub1=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data1)
+            code1=extract_code_from_html(studentsub1)
+        if(table_data2!="NA"):
+            studentsub2=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data2)
+            code2=extract_code_from_html(studentsub2)
+
         
-        output_rows.append([roll, table_data1, table_data2])
-        print([roll, table_data1, table_data2])
+        output_rows.append([roll, "https://www.codechef.com/viewsolution/"+table_data1, code1, "https://www.codechef.com/viewsolution/"+table_data2, code2])
+        print([roll, table_data1, code1, table_data2, code2])
 
         time.sleep(2)
 
