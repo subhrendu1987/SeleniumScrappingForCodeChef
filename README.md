@@ -44,4 +44,7 @@ Therefore, create a file (`CSVs/2C33URLS.tsv`) containing as following
 Roll	CodingProblem1	CodingProblem2
 1024030451	https://www.codechef.com/moderate/solutions/NZJDQ?sort_by=All&sorting_order=asc&language=All&status=All&pcode=CHESSGM&handle=fkansal_be24&Submit=GO	https://www.codechef.com/moderate/solutions/NZJDQ?sort_by=All&sorting_order=asc&language=All&status=All&pcode=JBSQNCE&handle=fkansal_be24&Submit=GO
 ```
+* ``` https://docs.google.com/spreadsheets/d/121Wy3ZUxFrfz5JplTIZKqFue7T9aOPTZg4kIrDOejZA/edit?gid=900185514#gid=900185514```
+This tab is used for extracting URL from the actual submissions. CHange cell A1 values to get the URLs and download this file as CSV.
+
 * ``` python3 fetchStudSubmission.py  --input CSVs/2C33URLS.tsv --output CSVs/2C33Codes.tsv ```

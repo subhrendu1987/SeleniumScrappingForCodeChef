@@ -1,7 +1,7 @@
 import csv
 import time
 import argparse
-
+import json
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -9,6 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 
 from auth import wait_for_manual_login
 
@@ -39,7 +40,7 @@ def extract_code_from_html(html):
             code_lines.append(text)
 
     return "\n".join(code_lines)
-
+# Fetch AssessmentID from URL
 def parse_tablebox_table(html):
     soup = BeautifulSoup(html, "html.parser")
 
@@ -88,6 +89,53 @@ def parse_tablebox_table(html):
     }
     return data.get("id", "NA") or "NA"
 
+# Fetch All Assessments
+def parse_all_assesments(html):
+    soup = BeautifulSoup(html, "html.parser")
+
+    table = soup.select_one("div.tablebox table.dataTable")
+    if not table:
+        return []
+
+    tbody = table.find("tbody")
+    if not tbody:
+        return []
+
+    rows = tbody.find_all("tr")
+
+    results = []
+
+    for row in rows:
+        cells = row.find_all("td")
+
+        if len(cells) < 10:
+            continue
+
+        data = {
+            "id": cells[0].get_text(strip=True),
+            "datetime": cells[1].get_text(strip=True),
+            "username": cells[2].get_text(strip=True),
+            "problem_code": cells[3].get_text(strip=True),
+            "contest_code": cells[4].get_text(strip=True),
+
+            "result": (
+                cells[5].find("span").get("title", "").strip()
+                if cells[5].find("span") else ""
+            ),
+
+            "time": cells[6].get_text(strip=True),
+            "memory": cells[7].get_text(strip=True),
+            "language": cells[8].get_text(strip=True),
+
+            "solution_link": (
+                cells[9].find("a")["href"]
+                if cells[9].find("a") else ""
+            )
+        }
+
+        results.append(data)
+
+    return results
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -168,6 +216,19 @@ def write_output_tsv(output_file, rows):
         for row in rows:
             writer.writerow(row)
 
+def modify_url(url, condition):
+    parsed = urlparse(url)
+    query = parse_qs(parsed.query)
+
+    # condition NOT satisfied → set pcode = All
+    if not condition:
+        query["pcode"] = ["All"]
+
+    # rebuild query string
+    new_query = urlencode(query, doseq=True)
+
+    # rebuild full URL
+    return urlunparse(parsed._replace(query=new_query))
 
 def main():
     args = parse_args()
@@ -188,6 +249,14 @@ def main():
         html2 = fetch_html(driver, url2)
         table_data2 = parse_tablebox_table(html2)
         table_data2 = table_data2 or "NA"
+        if(table_data1!="NA" and table_data2!="NA"):
+            new_url = modify_url(url1, condition=False)
+            html1 = fetch_html(driver, new_url)
+            all_assessments=parse_all_assesments(html1)
+            
+            output_rows.append([roll, json.dumps(all_assessments)])
+            print([roll, json.dumps(all_assessments)])
+
         # Fetch the student code
         if(table_data1!="NA"):
             studentsub1=fetch_html(driver,"https://www.codechef.com/viewsolution/"+table_data1)
