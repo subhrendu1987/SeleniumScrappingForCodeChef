@@ -48,3 +48,4 @@ Roll	CodingProblem1	CodingProblem2
 This tab is used for extracting URL from the actual submissions. CHange cell A1 values to get the URLs and download this file as CSV.
 
 * ``` python3 fetchStudSubmission.py  --input CSVs/2C33URLS.tsv --output CSVs/2C33Codes.tsv ```
+* ``` python3 fetchStudSubmission.py  --input CSVs/2C33URLS.tsv --output CSVs/2C33Codes.tsv --debug```

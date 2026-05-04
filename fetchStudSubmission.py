@@ -29,15 +29,13 @@ def extract_code_from_html(html):
 
     code_lines = []
     for line in lines:
-        # Get text from all nested spans properly
-        #text = "".join(line.stripped_strings)
-        text = "".join(line.strings)
+        # Preserve exact spacing between tokens
+        text = line.get_text("", strip=False)
 
-        # Preserve empty lines
-        if text == "":
-            code_lines.append("")
-        else:
-            code_lines.append(text)
+        # Remove trailing whitespace but keep indentation
+        text = text.rstrip()
+
+        code_lines.append(text)
 
     return "\n".join(code_lines)
 # Fetch AssessmentID from URL
@@ -211,7 +209,7 @@ def write_output_tsv(output_file, rows):
         writer = csv.writer(f, delimiter="\t")
 
         # header
-        writer.writerow(["Roll","Link1","Code1","Link2" ,"Code2"])
+        writer.writerow(["Roll","Link1","Code1","Marks","Link2" ,"Code2","Marks","PlagScan","Code1LineCount","Code2LineCount"])
 
         for row in rows:
             writer.writerow(row)
@@ -241,8 +239,8 @@ def main():
     output_rows = []
     rechecklist=[]
 
-    for roll, url1, url2 in input_rows:
-        print(f"➡ Processing Roll: {roll}")
+    for i, (roll, url1, url2) in enumerate(input_rows):
+        print(f"➡ Processing Roll: {roll} {i}/{len(input_rows)}")
 
         html1 = fetch_html(driver, url1)
         table_data1 = parse_tablebox_table(html1)
@@ -277,7 +275,9 @@ def main():
         code1 = code1 or "NA"
         code2 = code2 or "NA"
         print("https://www.codechef.com/viewsolution/"+table_data1, "https://www.codechef.com/viewsolution/"+table_data2)
-        output_rows.append([roll, "https://www.codechef.com/viewsolution/"+table_data1, code1, "https://www.codechef.com/viewsolution/"+table_data2, code2])
+        formula1 = '=BYROW(C2:C, LAMBDA(cell, IF(cell="", 0, COUNTA(SPLIT(cell, CHAR(10))))))' if i == 0 else ""
+        formula2 = '=BYROW(F2:F, LAMBDA(cell, IF(cell="", 0, COUNTA(SPLIT(cell, CHAR(10))))))' if i == 0 else ""
+        output_rows.append([roll, "https://www.codechef.com/viewsolution/"+table_data1, code1,"", "https://www.codechef.com/viewsolution/"+table_data2, code2,"","",formula1,formula2])
         if args.debug:
             print([roll, table_data1, code1, table_data2, code2])
 
@@ -285,7 +285,9 @@ def main():
 
     write_output_tsv(args.output, output_rows)
     print(f"\n Done. Output saved to {args.output}")
-    print(rechecklist)
+    #print(rechecklist)
+    for [r,url] in rechecklist:
+        print(r,url)
 
     if args.debug:
         print("🐞 Debug mode ON — browser will stay open.")

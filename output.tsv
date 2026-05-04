@@ -1,183 +1,868 @@
-Roll	Link1	HTML1	Link2	HTML2
-1024030451	https://www.codechef.com/viewsolution/1254962826	"#include <bits/stdc++.h>
+Roll	Link1	Code1	Link2	Code2
+1024031036	https://www.codechef.com/viewsolution/1254777794	"#include <bits/stdc++.h>
 using namespace std;
 
-int solve(int idx,int i,int j,int k,int dist,int turns){
- if(idx == turns && i == j && j== k){
-  return 1;
- }
- 
- if(j>i || k>j){
-  return 0;
- }
- 
- if( (i-j) > dist || (j-k) > dist ){
-  return 0;
- }
- 
- if(idx == turns && (i !=j || j!= k)){
-  return 0;
- }
- 
- int first = 0;
- int second= 0;
- int third = 0;
- 
- for(int z = 1;z<=dist;z++){
-  first += solve(idx+1,i+z,j,k,dist,turns);
-  second += solve(idx+1,i,j+z,k,dist,turns);
-  third += solve(idx+1,i,j,k+z,dist,turns);
+int main() {
+ int T;
+ while(T--){
+ string s;
+ cin>>s;
+
+ int n=s.size();
+
+ if(s.size()==0||1){
+ cout<<""0""<<endl;
+ break;
  }
 
- return (first+second+third);
- 
+
+ int count=0;
+ int i=0;
+
+ while(i<n){
+ if(s[i]!=s[i+1]){
+ count++;
+ i=i+2;
+ }
+ else{
+ i++;
+ }
+ }
+
+ cout<<count<<endl;
+ }
+
+ return 0;
+
 }
+"	https://www.codechef.com/viewsolution/1254799882	"#include <bits/stdc++.h>
+using namespace std;
 
 int main() {
- int d,k;
- cin >> d >> k;
- 
- int answ = solve(0,0,0,0,d,k);
- cout << answ;
+ int T;
+ while(T--){
+ int X,Y,N,R;
+ cin>>X>>Y>>N>>R;
+
+ vector<pair<int,int>> dp;
+
+ for(int r=0;r<N*X;r++){
+ dp[r].first=-1;
+ dp[r].second=-1;
+ }
+
+ int i=N*X;
+ dp[i].first=N;
+ dp[i].second=0;
+
+ while(i<=R){
+ int diff=Y-X;
+
+ for(int j=i;j<i+diff;j++){
+ dp[i+1]=dp[i];
+ }
+
+ int left=dp[i].first;
+ int right=dp[i].second;
+ i=i+diff;
+ dp[i].first=left-1;
+ dp[i].second=right+1;
+ }
+
+ cout<<dp[R].first<<""""<<dp[R].second;
+ }
+
+ return 0;
+
+}
+"
+1024031037	https://www.codechef.com/viewsolution/1254798256	"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+ int N = 10 ^ 5;
+ cin >> N;
+ string s;
+ int count = 0;
+ for (int i = 0; i <= N; i++) {
+  cin >> s;
+ }
+
+ for (int i = 0; i <= N; i++) {
+  if (s[i] != s[i + 1]) {
+   count++;
+   i = i + 2;
+  }
+  else {
+   i = i + 1;
+  }
+  cout << count << endl;
+ }
+ return 0;
+}"	https://www.codechef.com/viewsolution/1254798314	"#include <bits/stdc++.h>
+
+using namespace std;
+
+int main() {
+ int N, Wmt;
+ cin >> N;
+ cin >> Wmt;
+ vector < int > costn, costp, x, amt;
+
+ for (int i = 0; i < N; i++) {
+  cin >> costn[i] >> costp[i] >> x[i] >> amt[i];
+
+ }
+
+ vector < long long > dp(Wmt + 1, 0);
+ for (int i = 0; i < N; i++) {
+  for (int w > Wmt; w > amt[i]; w--) {
+   x[i]++
+   dp[v] = max(x[i], dp[amt[i] - (costp[i] + costn[i])]);
+  }
+  cout<<dp[Wmt];
+  int cp,cn,np,nn;
+  cin>>cp>>cn>>np>>nn;
+
+  int amt,num;
+  cin<<amt>>num;
+
+  vector<int> x;
+
+  for(int i=0;i<N;i++){
+   x[i]=cp[i]*np[i];
+  }
+
+  for(int j=0;j<N,j++){
+   y[j]=cn[i]*nn[i];
+  }
+
+  vector<long long>dp
+ }
+
+}"
+1024031038	https://www.codechef.com/viewsolution/1254803258	"#include <bits/stdc++.h>
+using namespace std;
+#include vector
+
+
+ int pairs(string s , S.size)
+ std::vector<int S> ;
+
+
+
+
+
+ for(int i=1 , i<=size , i++){
+  for(j=1 , j<=size, j++){
+   if(S[i]=S[j-1]){
+    dp[i][j]=dp[i-1][j-1]
+   }
+   sizeof(dp[i][j]>dp[i-1][j-1])
+  }
+ }
+
+
+int main() {
+ int t;
+ while t--;
+ string S;
+ cin>>S;
+
+cout<<pairs(S , S.size()) << endl;
+
+ std::cin >> n;
+ while(n=S){
+ cin
+ }
+
+}
+"	https://www.codechef.com/viewsolution/1254803176	"#include <bits/stdc++.h>
+using namespace std;
+#include vector
+static pair<int,int> integers(int N , int P , int R )
+
+for(i=0,i<=n,i++){
+ while(R<N){
+  Rcount++;
+  N<=R;
+ }
+}
+
+ for(int i=0 , i<n , i++){
+  if(N<R){
+   Ncount++;
+   R<=N;
+  }
+ }
+ return(Ncount,Pcount);
+}
+int main() {
+ int t;
+ std::cin >> t;
+ while(t--){
+ int X,Y,N,R
+ cin>>X>>Y>>N>>R;
+ int normal=burgers(X,Y,R,N).first
+ int premium=burgers(X,Y,R,N).second
+
+ if()
+ }
+ cout<<normal+premium
+}
+"
+1024031039	[]	[]
+1024031040	https://www.codechef.com/viewsolution/1254780662	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+ int t;
+ cin >> t;
+
+ while(t--) {
+  string s;
+  cin >> s;
+  int n = s.length();
+
+  long long count = 0;
+
+  for(int i = 1; i <= n ; i++) {
+   if(s[i] != s[i-1]) {
+    count++;
+   }
+   i++;
+  }
+  cout << count << ""\n"";
+ }
  return 0;
 }
-"	https://www.codechef.com/viewsolution/1254962964	"vector<int> scheduleTasks(vector<int>& taskDeadlines, vector<int>& taskRewards) {
- 
- int n = taskDeadlines.size();
- priority_queue< pair<int,int> > pq;
- for(int i=0;i<n;i++){
-  pq.push({taskRewards[i],taskDeadlines[i]});
+"	https://www.codechef.com/viewsolution/1254802077	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+ int t;
+ cin >> t;
+
+ while(t--) {
+  int X,Y;
+  long long N, R;
+  cin >> X >> Y >> N >> R;
+  if(R < X) return -1;
+
+  int premBurger = 0;
+  int normBurger = 0;
+
+  long long cost = R;
+  long long rem_burger = N;
+
+  vector<long long> dp(premBurger + 1, 0);
+  while(rem_burger <= N) {
+   if(rem_burger == 0) break;
+
+   while(cost){
+    if(Y < cost && (Y + (rem_burger - 1)*X <= cost)) {
+     premBurger += 1;
+     rem_burger -= 1;
+     cost -= Y;
+    }
+    else {
+     normBurger += 1;
+     rem_burger -= 1;
+     cost -= X;
+    }
+   }
+  }
+  cout << normBurger << "" "" << premBurger << ""\n"";
  }
- 
- int maxdead = 0;
- for(int i=0;i<n;i++){
-  maxdead = max(maxdead,taskDeadlines[i]);
+ return 0;
+}
+"
+1024031041	https://www.codechef.com/viewsolution/1256373803	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int t;
+ cin>>t;
+ while(t--){
+  string student;
+  cin>>student;
+  int pairs=0;
+  for(int i=1;i<student.size();i++){
+   if(student[i]!=student[i-1]){
+    pairs++;
+    i++;
+   }
+  }
+  cout<<pairs<<endl;
  }
- 
- maxdead = maxdead+1;
- 
- vector<int> slot(maxdead,0);
- slot[0] = 1;
- 
- int count = 0;
- int profit = 0;
- 
- while(!pq.empty()){
-  auto top = pq.top();
-  pq.pop();
-  
-  int start = top.second;
-  int p = top.first;
-  
-  for(int i=start;i>=0;i--){
-   if(slot[i] == 0){
-    slot[i] = 1;
-    count++;
-    profit = profit + p;
-    break;
+ return 0;
+ // your code goes here
+}
+"	https://www.codechef.com/viewsolution/NA	NA
+1024031042	https://www.codechef.com/viewsolution/1254784329	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+ int t;
+ cin>>t;
+ for(int i=0;i<t;i++){
+  string s;
+  cin>>s;
+  int pairs=0;
+
+  int n=s.length();
+  if(n==0){
+   pairs=0;
+  }
+  if(n==1){
+   pairs=0;
+  }
+  if(n==2){
+   if(s[0]!=s[1]){
+    pairs=1;
+   }
+  }
+  else{
+  for(int i=0;i<n;i++){
+
+
+   if(s[i]!=s[i+1]){
+    pairs++;
+    i++;
+   }
+  }}
+  cout<<pairs<<endl;
+ }
+}
+"	https://www.codechef.com/viewsolution/1254801923	"#include <bits/stdc++.h>
+using namespace std;
+
+
+void max_burgers(int x,int y,int n,int r){
+ int count_n=0;
+ int count_p=0;
+ if((x*n<=r)||(y*n<=r)){
+  for(int i=0;i<n;i++){
+   if((i)*y<=r && ((n-i)*x)<=r-(i)*y){
+    count_n=n-i;
+    count_p=i;
    }
   }
  }
- return {count,profit};
-} 
 
+
+ int count=count_n+count_p;
+ if(count == n){
+  cout<<count_n<<"" ""<<count_p<<endl;
+ }
+ else cout<<-1;
+
+}
+int main() {
+ // your code goes here
+ int t;
+ cin>>t;
+
+ while(t>0){
+  int x,y,n,r;
+  cin>>x;
+  cin>>y;
+  cin>>n;
+  cin>>r;
+  max_burgers(x,y,n,r);
+ }
+}
 "
-1024030468	https://www.codechef.com/viewsolution/NA	"#include <bits/stdc++.h>
+1024031045	https://www.codechef.com/viewsolution/1254800873	"#include <bits/stdc++.h>
 using namespace std;
 
-int solve(int idx,int i,int j,int k,int dist,int turns){
- if(idx == turns && i == j && j== k){
-  return 1;
+int main() {
+
+ int T;
+ cin >> T;
+ while(T--) {
+
+ string s;
+ cin >>s;
+ int n = s.length();
+ int count = 0;
+ for(int i=1;i<n;i++) {
+  if (s[i] != s[i+1]) {
+   count++;
+   i = i+2;
+
+  }
+  else {
+   i++;
+  }
+
  }
- 
- if(j>i || k>j){
-  return 0;
- }
- 
- if( (i-j) > dist || (j-k) > dist ){
-  return 0;
- }
- 
- if(idx == turns && (i !=j || j!= k)){
-  return 0;
- }
- 
- int first = 0;
- int second= 0;
- int third = 0;
- 
- for(int z = 1;z<=dist;z++){
-  first += solve(idx+1,i+z,j,k,dist,turns);
-  second += solve(idx+1,i,j+z,k,dist,turns);
-  third += solve(idx+1,i,j,k+z,dist,turns);
+ cout << count;
+
  }
 
- return (first+second+third);
- 
+
+}
+"	https://www.codechef.com/viewsolution/1254800751	"#include <bits/stdc++.h>
+using namespace std;
+
+
+int main() {
+ int r;
+ cin >> r;
+ int i;
+ int n;
+ int arr[n];
+ for (i=0;i<n;i++) {
+  cin >> arr[i];
+ }
+ int X[n];
+ int Y[n];
+ int low = 0;
+ int high = n;
+ int mid = (high+low)/2;
+ for(i=0;i<n;i++) {
+
+ while(low<high) {
+ if(arr[mid]==r) {
+ return mid;
+ }
+ else if(arr[mid]>r) {
+ return low-1;
+ }
+ else {
+ return high+1;
+ }
+
+
+ }
+ cout << mid;
+ }
+ cout << r;
+
+
+
+
+}
+"
+1024031046	https://www.codechef.com/viewsolution/1254799279	"#include <bits/stdc++.h>
+using namespace std;
+int maxPairs(int arr, int n){
+ if(n == 0) return 0;
+ int pairs = 0;
+ int i = 1;
+ int j = i+1;
+
+ while(i <= n && j <= n){
+  if(arr[i] != arr[j]){
+   pairs++;
+   i = j+1;
+   j = j+1;
+  }
+  else{
+   i = j;
+   j = j+1;
+  }
+ }
+ return pairs;
 }
 
 int main() {
- int d,k;
- cin >> d >> k;
- 
- int answ = solve(0,0,0,0,d,k);
- cout << answ;
+ int n;
+ cin>>n;
+ int arr[n];
+ cout<<endl;
+
+
+
+
+}
+"	https://www.codechef.com/viewsolution/1254798149	"#include <bits/stdc++.h>
+using namespace std;
+void buyBurgers(int X,int Y,int n,int R){ //2 10 4 12
+ if(R == 0){ cout<<-1; return;}
+ if(n == 0){ cout<<0<<"" ""<<0; return;}
+ int normal = 0,premium = 0;
+ int count = 0;
+ while(R > 0 && count < n){
+  if(R >= Y){
+   count++;
+   premium++;
+   R = R - Y;
+   continue;
+  }
+  else if(R >= X){
+   count++;
+   normal++;
+   R = R - X;
+   continue;
+  }
+  else{
+   break;
+  }
+ }
+ if(count < n){
+  cout<<-1;
+  return;
+ }
+  cout<<normal<<"" ""<<premium;
+}
+
+int main() {
+ int X,Y,N,R;
+ cin>>X>>Y>>N>>R;
+ buyBurgers(X,Y,N,R);
  return 0;
 }
-"	https://www.codechef.com/viewsolution/1254965486	"#include <iostream>
+"
+1024031047	https://www.codechef.com/viewsolution/1254798865	"#include <bits/stdc++.h>
 using namespace std;
 
-vector<int> scheduleTasks(vector<int>& taskDeadlines, vector<int>& taskRewards) {
- 
- vector <int> ans;
- vector<pair><int,int> task; 
- 
- for(int i = 0; i<taskDeadlines.size(){
-  task.push_back(taskRewards[i], taskDeadlines[i]);
- }
- 
- 
- vector <int> timeslots;
- sort(taskRewards.begin(), taskRewards.end());
- 
- int maxdead= 0; 
- 
- for (int i = 0; i< taskDeadlines.size(); i++){
-  maxdead = max(maxdead, taskDeadlines[i]);
-  
- }
- 
- vector <int> slots(maxdead + 1, -1);
- 
- int sum1 = 0; int sum2 = 0;
- for(int i = 0; i< taskDeadlines.size(); i++){
-  if(slots[task[i].second == 1]);
-  sum1 += 1;
-  sum2 += task.first;
-  slots[task[i].second] = 1;
- }
- 
- ans.push_push_back(sum1);
- ans.push_back(sum2);
- 
+int main() {
+
+int N;
+cin>>N;
+vector<string>S(N);
+for(int i=0;i<N;i++){
+ cin>>S[i];
 }
 
 
-int main(){
- 
- int n;
- cout<<""enter number of tasks""<<endl;
- cin>>n;
- 
- vector <int> taskDeadlines[n];
- vector <int> taskRewards[n];
- 
- cout<<""enter deadline and reward for tasks""<<endl;
- for(int i = 0; i<n; i++){
-  cin>>taskDeadlines[i];
-  cin>>taskRewards[i]
+
+
+int count=0;
+for(int i=0;i<N;i++){
+if(S[i]!=S[i+1]){
+ count++;
+ i=i+2;
+}
+else{
+ i=i+1;
+}
+}
+cout<<count<<endl;
+
+return 0;
+}
+
+
+
+
+"	https://www.codechef.com/viewsolution/1254795142	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+/*  int N,Wm;
+    cin>>N,Wm;
+
+    vector<int>costn,costp,x,amt;
+
+for(int i=0;i<N;i++)
+{
+    cin>>costn[i]>>costp[i]>>x[i]>>amt[i];
+
+
+}
+
+vector<long long>dp(Wm+1,0);
+
+for(i=0;i<N;i++){
+    for(int w>Wm;w>amt[i];w--){
+     x[i]++;
+     dp[w]=max(x[i],dp[amt[i]-(costn[i]+costp[i])]);
+    }
+    cout<<dp[Wm];*/
+
+ int n,nmax;
+ cin>>n,nmax;
+
+ vector<int>cp,cn,np,nn;
+ for(int i=0;i<n;i++)
+{
+ cin>>cp[i],cn[i],np[i],nn[i];
+}
+ int amt,num;
+ cin>>amt>>num;
+
+ vector<int>x,y;
+
+ for(int i=0;i<n;i++){
+  x[i]=cp[i]*np[i];
+
+}
+
+for(int i=0;i<n;i++)
+{
+ y[i]=cn[i]*nn[i];
+}
+
+vector<long long>dp(nmax+1,0);
+
+for(int i=0;i<n;i++){
+ for(int w=nmax;w>(np[i]+nn[i]);w--){
+  dp[w]=max((amt[i]-(np[i]+nn[i])),dp[nmax]);
  }
- 
- 
+
+}
+cout<<dp[nmax];
+return 0;
+}"
+1024031048	https://www.codechef.com/viewsolution/1254791020	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int t;
+ cin >> t;
+ while (t--)
+ {
+  string s;
+  cin >> s;
+  int n = s.size(), ans = 0;
+  for (int i = 0; i < n; i++)
+  {
+   int c = 0;
+   for (int j = i ; j<n ; j ++)
+   {
+    if(s[j]=='1') c++;
+    else c--;
+    if (c>0) ans++;
+   }
+  }
+
+
+ }
+ cout << ""1"" << endl << ""2"" << endl << ""0"";
+}
+"	https://www.codechef.com/viewsolution/1254795459	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ int t;
+ cin >> t;
+ while(t--)
+ {
+ long long X, Y, N, R;
+
+ cin>> X >> Y >> N >> R;
+ long long b = min (N,R/Y);
+
+ while (b>=0)
+ {
+ long long a = N-b;
+ if (a*X+ b*Y == R)
+ {
+ cout << a << "" "" << b << "" "" << endl;
+ break;
+ }
+ b--;
+ }
+ if (b<0) cout << -1 << ""\n"";
+ }
+ return 0;
 }
 "
+1024031049	https://www.codechef.com/viewsolution/1254759472	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+
+ int N;
+ cin>>N;
+
+ while(N>0)
+ {
+ string s;
+ cin>>s;
+ int count=0;
+
+ for(int i=0;i+1<s.size();)
+ {
+ if(s[i]!=s[i+1])
+ {
+ count++;
+ i+=2;
+ }
+ else
+ {
+ i++;
+ }
+
+ }
+ cout<<count<<endl;
+ N--;
+ }
+
+
+}
+"	https://www.codechef.com/viewsolution/1254799930	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+ int N;
+ cin>>N;
+ while(N>0)
+ {
+ int x;
+ int y;
+ int n;
+ int r;
+
+ cin>>x>>y>>n>>r;
+//  int c1=0,c2=0,totC=0;
+ while(totC<=N)
+ {
+ if(r>=y)
+ {
+ c1++;
+ totC++;
+ if(tot)
+ }
+ else
+ {
+ break;
+ }
+
+
+ }
+
+ int c1=r/y;
+ int y=r%y;
+
+ if(c1<N)
+ {
+
+ }
+ else if(c1>N&& y==0)
+ {
+
+ c2=y;
+ c1=0;
+ }
+
+ if(totC==N)
+ {
+ cout<<c2<<c1<<endl;
+ }
+ else
+ {
+ cout<<""-1""<<endl;
+ }
+ N--;
+ }
+
+}
+"
+1024031072	https://www.codechef.com/viewsolution/1254796394	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+ int t;
+ string s;
+ cin>>t;
+ while(t)
+}
+ cin>>s;
+ int l,count=0;
+ l=s,length();
+ for(int i=0;i<l-1,i++)
+ {
+  if ((s[i]=='x'&&s[i+1]=='y')||s[i]=='y'&&x[i+1]=='x')
+ {
+ count++;
+ i+=1;
+  }
+ }
+ cout<<count<<endl;
+ t--;
+ }
+}"	https://www.codechef.com/viewsolution/1254796257	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+
+ int x,y,n,r;
+ int t;
+ cin>>t;
+ while (t) {
+  cin>>x;
+  cin>>y;
+  cin>>n;
+  cin>>r;
+  int i;
+  for (i=n,i>=0,i--)
+  {
+   if (y*i+x*(n-1)<=r)
+  }
+  break;
+ }
+}
+if (i>=0)
+cout<<n-i<<"" ""<<i<<endl;
+else
+cout<<-1<<endl;
+t--;
+ }
+}
+"
+1024031169	https://www.codechef.com/viewsolution/1254795728	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+ int t;
+ string s;
+ cin>>t;
+ while(t)
+ {
+ cin>>s;
+ int l,count=0;
+ l=s.length();
+ for(int i=0;i<l-1;i++)
+ {
+ if((s[i]=='x'&&s[i+1]=='y')||s[i]=='y'&&s[i+1]=='x')
+ {
+ count++;
+ i+=1;
+ }
+ }
+ cout<<count<<endl;
+ t--;
+ }
+}
+"	https://www.codechef.com/viewsolution/1254795322	"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+ // your code goes here
+ int x,y,n,r;
+ int t;
+ cin>>t;
+ while(t){
+ cin>>x;
+ cin>>y;
+ cin>>n;
+ cin>>r;
+ int i;
+ for(i=n;i>=0;i--)
+ {
+ if(y*i+x*(n-i)<=r)
+ {
+ break;
+ }
+ }
+ if(i>=0)
+ cout<<n-i<<"" ""<<i<<endl;
+ else
+ cout<<-1<<endl;
+ t--;
+ }
+}
+"
+1024031170	[{'id': '1256312467', 'datetime': '08:45 AM 03/04/26', 'username': 'gbansal1_be24', 'problem_code': 'ARRAYREOR', 'contest_code': 'OMIA6', 'result': 'accepted', 'time': '0.08', 'memory': '4.6M', 'language': 'C++', 'solution_link': '/viewsolution/1256312467'}, {'id': '1256312364', 'datetime': '08:44 AM 03/04/26', 'username': 'gbansal1_be24', 'problem_code': 'ARRAYREOR', 'contest_code': 'OMIA6', 'result': 'accepted', 'time': '0.07', 'memory': '4.6M', 'language': 'C++', 'solution_link': '/viewsolution/1256312364'}, {'id': '1256312289', 'datetime': '08:44 AM 03/04/26', 'username': 'gbansal1_be24', 'problem_code': 'KDELI', 'contest_code': 'OMIA6', 'result': 'accepted', 'time': '0.06', 'memory': '4.5M', 'language': 'C++', 'solution_link': '/viewsolution/1256312289'}, {'id': '1256311107', 'datetime': '08:39 AM 03/04/26', 'username': 'gbansal1_be24', 'problem_code': 'KDELI', 'contest_code': 'OMIA6', 'result': 'accepted', 'time': '0.06', 'memory': '4.5M', 'language': 'C++', 'solution_link': '/viewsolution/1256311107'}, {'id': '1256307060', 'datetime': '08:23 AM 03/04/26', 'username': 'gbansal1_be24', 'problem_code': 'ARRAYREOR', 'contest_code': 'OMIA6', 'result': 'accepted', 'time': '0.07', 'memory': '4.6M', 'language': 'C++', 'solution_link': '/viewsolution/1256307060'}]	"[{""id"": ""1256312467"", ""datetime"": ""08:45 AM 03/04/26"", ""username"": ""gbansal1_be24"", ""problem_code"": ""ARRAYREOR"", ""contest_code"": ""OMIA6"", ""result"": ""accepted"", ""time"": ""0.08"", ""memory"": ""4.6M"", ""language"": ""C++"", ""solution_link"": ""/viewsolution/1256312467""}, {""id"": ""1256312364"", ""datetime"": ""08:44 AM 03/04/26"", ""username"": ""gbansal1_be24"", ""problem_code"": ""ARRAYREOR"", ""contest_code"": ""OMIA6"", ""result"": ""accepted"", ""time"": ""0.07"", ""memory"": ""4.6M"", ""language"": ""C++"", ""solution_link"": ""/viewsolution/1256312364""}, {""id"": ""1256312289"", ""datetime"": ""08:44 AM 03/04/26"", ""username"": ""gbansal1_be24"", ""problem_code"": ""KDELI"", ""contest_code"": ""OMIA6"", ""result"": ""accepted"", ""time"": ""0.06"", ""memory"": ""4.5M"", ""language"": ""C++"", ""solution_link"": ""/viewsolution/1256312289""}, {""id"": ""1256311107"", ""datetime"": ""08:39 AM 03/04/26"", ""username"": ""gbansal1_be24"", ""problem_code"": ""KDELI"", ""contest_code"": ""OMIA6"", ""result"": ""accepted"", ""time"": ""0.06"", ""memory"": ""4.5M"", ""language"": ""C++"", ""solution_link"": ""/viewsolution/1256311107""}, {""id"": ""1256307060"", ""datetime"": ""08:23 AM 03/04/26"", ""username"": ""gbansal1_be24"", ""problem_code"": ""ARRAYREOR"", ""contest_code"": ""OMIA6"", ""result"": ""accepted"", ""time"": ""0.07"", ""memory"": ""4.6M"", ""language"": ""C++"", ""solution_link"": ""/viewsolution/1256307060""}]"
