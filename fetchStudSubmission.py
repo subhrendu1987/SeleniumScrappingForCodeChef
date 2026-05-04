@@ -211,7 +211,7 @@ def write_output_tsv(output_file, rows):
         writer = csv.writer(f, delimiter="\t")
 
         # header
-        writer.writerow(["Roll","Link1","HTML1","Link2" ,"HTML2"])
+        writer.writerow(["Roll","Link1","Code1","Link2" ,"Code2"])
 
         for row in rows:
             writer.writerow(row)
