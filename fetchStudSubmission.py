@@ -274,7 +274,7 @@ def main():
             code2=extract_code_from_html(studentsub2)
         code1 = code1 or "NA"
         code2 = code2 or "NA"
-        print("https://www.codechef.com/viewsolution/"+table_data1, "https://www.codechef.com/viewsolution/"+table_data2)
+        print("https://www.codechef.com/viewsolution/"+table_data1, code1.count('\n'), "https://www.codechef.com/viewsolution/"+table_data2,code2.count('\n'))
         formula1 = '=BYROW(C2:C, LAMBDA(cell, IF(cell="", 0, COUNTA(SPLIT(cell, CHAR(10))))))' if i == 0 else ""
         formula2 = '=BYROW(F2:F, LAMBDA(cell, IF(cell="", 0, COUNTA(SPLIT(cell, CHAR(10))))))' if i == 0 else ""
         output_rows.append([roll, "https://www.codechef.com/viewsolution/"+table_data1, code1,"", "https://www.codechef.com/viewsolution/"+table_data2, code2,"","",formula1,formula2])
@@ -286,8 +286,8 @@ def main():
     write_output_tsv(args.output, output_rows)
     print(f"\n Done. Output saved to {args.output}")
     #print(rechecklist)
-    for [r,url] in rechecklist:
-        print(r,url)
+    for x in rechecklist:
+        print(x)
 
     if args.debug:
         print("🐞 Debug mode ON — browser will stay open.")
