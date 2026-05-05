@@ -49,3 +49,11 @@ This tab is used for extracting URL from the actual submissions. CHange cell A1 
 
 * ``` python3 fetchStudSubmission.py  --input CSVs/2C33URLS.tsv --output CSVs/2C33Codes.tsv ```
 * ``` python3 fetchStudSubmission.py  --input CSVs/2C33URLS.tsv --output CSVs/2C33Codes.tsv --debug```
+
+## Fetch Questionwise scores
+* Use "https://www.codechef.com/manage/<ContestID>?tab=assessment_users" to download student assessment ID (last col)
+* Fetch question wise analysis using 
+```
+python3 fetchStudAssessment.py   --input input_le2.tsv   --output output.tsv
+```
+
