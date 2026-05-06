@@ -40,6 +40,9 @@ pip install pdfkit
 * Download the report shared by the CodeChef team in `TSV` format (Say the name is `CSVs/StudList-Full.tsv`)
 * Check the Header section and update the `### INPUT TSV FILES SET FIELD NAMES` section with appropriate column name
 * Filter out the section IDs based on group numbers (e.g. `awk 'NR==1 || /2C33|2C73|2C13|2C14/' CSVs/StudList-Full.tsv > CSVs/MyGroup.tsv `)
+* Take this output file (`MyGroup.tsv`) as the input of next step.
+```
+ 
 
 ## Fetch student submissions
 * CodeChef uses a general URL for fetching student submission, `https://www.codechef.com/moderate/solutions/<CONTEST_ID>?sort_by=All&sorting_order=asc&language=All&status=All&pcode=<PROBLEM_ID>&handle=<STUDENT_ID>&Submit=GO`

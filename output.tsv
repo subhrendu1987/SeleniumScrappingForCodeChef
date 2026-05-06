@@ -1,169 +1,1304 @@
-ReportURL	Roll	MCQ: PUYBDF12	MCQ: PUYBDF26	MCQ: PUYBDF32	MCQ: PUYBDF35	MCQ: PUYBDF46	Programming: NCBBR01	0	1	2	3	4	5	6	7	8	9	10	11	12	code_NCBBR01	plagScan
-https://www.codechef.com/manage/ZVZOS/report/6684664	1024170423	100/100	100/100	0/100	0/100	0/100	0/500	{'time': '56:05', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792639'}	{'time': '24:37', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270784104'}												"
-string findShortestCommonSupersequence(string firstString, string secondString) {
- int T=3;
- for(int i=0;i <= T;i++)
- {
-  firstString()='abc','xyz','aabbcc';
-  secondString()='ac','zyx','abcabc';
-  if (firstString.last()==secondString.first())
-  {
-   firstString.last()=secondString.second();
-   firstString.last()=secondstring.first();
-   if(remove value.secondString()==firstString()
-   {
-    return true;
-   }
-   }
+ReportURL	Roll	MCQ: DSCPPAS232	MCQ: PUYBDF01	MCQ: PUYBDF03	MCQ: PUYBDF04	MCQ: PUYBDF05	MCQ: PUYBDF06	MCQ: PUYBDF08	MCQ: PUYBDF10	MCQ: PUYBDF12	MCQ: PUYBDF14	MCQ: PUYBDF15	MCQ: PUYBDF18	MCQ: PUYBDF19	MCQ: PUYBDF20	MCQ: PUYBDF22	MCQ: PUYBDF24	MCQ: PUYBDF25	MCQ: PUYBDF26	MCQ: PUYBDF28	MCQ: PUYBDF29	MCQ: PUYBDF30	MCQ: PUYBDF32	MCQ: PUYBDF33	MCQ: PUYBDF34	MCQ: PUYBDF35	MCQ: PUYBDF36	MCQ: PUYBDF44	MCQ: PUYBDF46	MCQ: PUYBDF49	Programming: COMBSUM	Programming: CONNECTEDCOM	Programming: HBJRG01	Programming: HYBDD01	Programming: MATHCROSS2	Programming: NCBBR01	Programming: NOKIA	Programming: OBRGO01	Programming: PREP31	Programming: SUBSETTARGET	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15	16	17	18	19	20	21	22	23	24	25	26	27	28	29	code_COMBSUM	code_CONNECTEDCOM	code_HBJRG01	code_HYBDD01	code_MATHCROSS2	code_NCBBR01	code_NOKIA	code_OBRGO01	code_PREP31	code_SUBSETTARGET	plagScan
+https://www.codechef.com/manage/PBW69/report/6782579	https://www.codechef.com/manage/PBW69/report/6782579	100/100	100/100	0/100																	100/100									100/100		0/500									{'time': '49:35', 'problem': 'CONNECTEDCOM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270971264'}	{'time': '39:40', 'problem': 'CONNECTEDCOM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270967600'}	{'time': '33:58', 'problem': 'CONNECTEDCOM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270965598'}																													"class Solution {
+ public:
+ int findNumberOfComponent(int V, vector<vector<int>> &edges) {
 
+
+ }
+};
+int main{
+ int T;
+ int N,M
+
+}
+"									
+https://www.codechef.com/manage/LSAQ4/report/6683446	https://www.codechef.com/manage/LSAQ4/report/6683446			100/100										100/100	0/100	0/100												100/100										0/500			{'time': '64:47', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270885151'}	{'time': '62:01', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270883816'}	{'time': '49:54', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270878832'}																																			"void dfs(vector<bool>& visited,vector<vector<int>>& adj,int node){
+ visited[node] = true;
+ for(auto neighbour : adj[node]){
+  if(!visited[neighbour]){
+   dfs(visited,adj,neighbour);
+  }
  }
 }
 
-"	
-https://www.codechef.com/manage/ZVZOS/report/6683424	1024030084	100/100	100/100	100/100	100/100	0/100	0/500	{'time': '54:44', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792113'}	{'time': '54:35', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792084'}	{'time': '47:34', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790118'}	{'time': '46:28', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790007'}	{'time': '45:40', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270789763'}									"// void helper(string firstString, string secondString, string &temp, int m,int n){
+
+
+int performcount(int n,vector<vector<int>>& adj){
+ vector<bool> visited(n,false);
+ for(int i = 0;i<n;i++){
+  if(!visited[i]){
+   dfs(visited,adj,i);
+  }
+ }
+ int count = 0;
+ for(int i = 0;i<n;i++){
+  if(visited[i]){
+   count++;
+  }
+ }
+ return n-count;
+}
+
+int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ // write your code here
+ int ans = performcount(computerCount,cableConnections);
+ if(ans%2 == 0){
+  return ans+1;
+ }else{
+  return -1;
+ }
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6772678	https://www.codechef.com/manage/LSAQ4/report/6772678			100/100										100/100	0/100	100/100												100/100										0/500			{'time': '63:43', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884738'}	{'time': '46:41', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877794'}																																				"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ int N;
+ cin>>N;
+ cableConnections(N);
+ for( int i=0;i<N-1;i++){
+  for(int j=0;j<N-1;j++){
+   int dp[i][j];
+   cableConnections(6);
+   if(dp[6][6]){
+    return 1;
+   }
+   else{
+    return 0;
+   }
+  }
+ }
+
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683443	https://www.codechef.com/manage/LSAQ4/report/6683443			100/100										100/100	100/100	100/100												100/100										0/500			{'time': '64:10', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884825'}	{'time': '64:01', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884781'}	{'time': '59:44', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882796'}	{'time': '59:21', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882555'}	{'time': '56:11', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881405'}	{'time': '46:01', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877421'}	{'time': '35:43', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270872586'}																															"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ int computerCount
+ int connectioncount = (computerA || computerB)
+ for(int i= 0;i<computerCount;i++){
+  for(int j=0;j<computerCount;j++){
+
+   return -1
+  }
+ }
+
+}
+minoperationstoconnectnetwork(cableConnections)
+int
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683448	https://www.codechef.com/manage/LSAQ4/report/6683448			100/100										100/100	100/100	100/100												100/100										0/500			{'time': '62:52', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270884244'}	{'time': '62:38', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270883998'}	{'time': '60:44', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270883162'}	{'time': '56:53', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270881752'}	{'time': '55:02', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880902'}	{'time': '20:37', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270866723'}																																"int bfs(int node,int computerCount , vector<int>&vis , vector<vector<int>>&adj,vector<int>&ans){
+ vis[node]=1;
+ queue<int>q;
+ q.push(node);
+ while(!q.empty()){
+  int u = q.front();
+  ans.push_back(u);
+  q.pop();
+
+  for(int n : adj[node]){
+   if(vis[n]==0){
+    vis[n]=1;
+    q.push(n);
+   }
+  }
+ }
+int count =computerCount; // count should be equal to no vertices added
+int n = ans.size(); // assigning n as no of vertices visited
+if(count != n){
+ count=1; //the
+}else{
+ count=0;
+}
+return count;
+}
+
+
+int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+
+ vector<vector<int>>adj(computerCount+1);
+ for(auto e: cableConnections){
+  int u = e[0];
+  int v = e[1];
+  adj[u].push_back(v);
+  adj[v].push_back(u);
+ }
+ vector<int>vis(computerCount+1,0);
+ vector<int>ans;
+
+ int x = bfs(0,computerCount,vis,adj,ans);
+ cout<<x<<""\n"";
+
+
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683435	https://www.codechef.com/manage/LSAQ4/report/6683435			0/100										0/100	100/100	100/100												100/100										30/500			{'time': '57:03', 'problem': 'OBRGO01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270881864'}	{'time': '56:45', 'problem': 'OBRGO01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270881776'}	{'time': '47:35', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270878167'}	{'time': '40:14', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270874861'}	{'time': '37:14', 'problem': 'OBRGO01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270873449'}																																	"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ int count=0;
+ vector<bool> visited;
+ for(int i=0;i<computerCount;i++)
+ {
+  visited.push_back(false);
+ }
+ visited[cableConnections[0][0]]=true;
+ for(int i=0;i<cableConnections.size();i++)
+ {
+  if(!visited[cableConnections[i][0]] && !visited[cableConnections[i][1]])
+  {
+   count++;
+  }
+  if(visited[cableConnections[i][0]] && visited[cableConnections[i][1]])
+  {
+   count++;
+  }
+  visited[cableConnections[i][0]]=true;
+  visited[cableConnections[i][1]]=true;
+ }
+ return count;
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683436	https://www.codechef.com/manage/LSAQ4/report/6683436			100/100										100/100	0/100	100/100												0/100										0/500			{'time': '64:06', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884815'}	{'time': '63:59', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884773'}	{'time': '63:48', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884689'}	{'time': '58:33', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882341'}	{'time': '41:01', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270875176'}	{'time': '40:42', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270875089'}	{'time': '40:23', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270874838'}	{'time': '09:07', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270862200'}	{'time': '06:13', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270860994'}																													"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ for(int i=0;i<computerCount;i++){
+  if(col[i]!=""white""){
+   //backtrack to previous one and check if it is connected to others or not if all the connected ones to it are not white the we
+                need  reconnection
+
+  }
+  if(col[i]==""white""){
+   col[i] = ""grey"";
+   if(cableConnections[i][i+1]==1){
+    col[i] = ""black"";
+   }
+  }
+
+ }
+ return -1;
+}
+
+vector<string>col;
+ for(int x=0;x<n;x++){
+  col[x]=""white"";
+ }
+ // 90 percent who did this CHEATED
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683456	https://www.codechef.com/manage/LSAQ4/report/6683456			100/100										100/100	100/100	100/100												100/100										30/500			{'time': '63:17', 'problem': 'OBRGO01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270884371'}	{'time': '50:43', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270879225'}	{'time': '48:59', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270878621'}	{'time': '43:36', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270876377'}	{'time': '41:08', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270875206'}	{'time': '40:08', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270874744'}	{'time': '39:28', 'problem': 'OBRGO01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270874377'}	{'time': '39:13', 'problem': 'OBRGO01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270874307'}	{'time': '33:19', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270871653'}	{'time': '30:30', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270870521'}	{'time': '30:19', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270870478'}	{'time': '07:23', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270861418'}																										"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+)
+
+{
+ //number of cable connections
+ int edges = cableConnections.size();
+
+ //number of reconnections required
+ int reconnections = 0;
+
+ //minimum number of cable connections required to connect given number of computers- computerCount
+ if (edges < computerCount - 1){
+  return -1;
+ }
+
+ //to check all computers that are connected
+ vector<bool> visited(computerCount, false);
+
+ //to track direct connections
+ vector<vector<int>> list (cableConnections);
+
+ for(int cables = 0; cables < edges; cables++){
+  list[cableConnections[cables][0]].push_back(cableConnections[cables][1]);
+ }
+
+ //initialize the first node and insert it into a queue
+ int start = 0;
+ queue<int> q;
+ q.push(start);
+
+ visited[start] = true;
+
+ //count - to keep a track of nodes traversed
+ int count = 0;
+
+ //bfs approach to check for all connected nodes from node zero
+ while(!q.empty()){
+  //pop the front node of the queue
+  int node = q.front();
+  q.pop();
+
+  //check and add all directly connected nodes to the front node, into the queue
+  for(int x : list[node]){
+   count++;
+   if(!visited[x]){
+    q.push(x);
+    visited[x] = true;
+   }
+  }
+ }
+
+ //count number of nodes connected to zero
+ int conZero = 0;
+ for(int i=1; i < computerCount; i++){
+  if(visited[i]){
+   conZero = true;
+  }
+ }
+
+ //number of disconnected components
+ int disConnected = 0;
+
+ //for all disconnected nodes from '0'
+ for(int i = 1; i < computerCount; i++){
+  if(!visited[i]){
+   disConnected++;
+   visited[i] = true;
+
+   //apply bfs to disconnected node to check all other nodes connected to it
+   q.push(i);
+   while(!q.empty()){
+
+   }
+  }
+ }
+
+ int spare = count - conZero;
+
+ if(spare > disConnected){
+  reconnections = disConnected;
+ }else{
+  reconnections = -1;
+ }
+
+ return reconnections;
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683249	https://www.codechef.com/manage/LSAQ4/report/6683249			100/100										100/100	0/100	100/100												0/100										0/500			{'time': '62:52', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270884322'}	{'time': '62:34', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270884236'}																																				"int minOperationsToConnectNetwork(int computerCount,vector<vector<int>>& cableConnections){
+ if (computerCount == 2){
+  return 0;
+ }
+ if (cableConnections.size() < computerCount-1){
+  return -1;
+ }
+ vector<int>adj(computerCount,0);
+ for (auto x:cableConnections){
+  int i = x[0];
+  int j = x[1];
+  adj[i] += 1;
+  adj[j] += 1;
+ }
+ for (int z = 0; z<computerCount+1; z++){
+  if (adj[z] == 1 && adj[z+1] == 1){
+   return 1;
+  }
+ return 0;
+ }
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683458	https://www.codechef.com/manage/LSAQ4/report/6683458			100/100										100/100	100/100	100/100												100/100										0/500			{'time': '61:20', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883653'}	{'time': '61:04', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883476'}	{'time': '60:22', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883239'}	{'time': '59:15', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882706'}	{'time': '49:19', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270878803'}	{'time': '45:33', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877414'}	{'time': '27:56', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270869684'}	{'time': '27:49', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270869671'}	{'time': '19:49', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270866602'}	{'time': '19:25', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270866448'}	{'time': '18:41', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270866115'}																														
+https://www.codechef.com/manage/LSAQ4/report/6683409	https://www.codechef.com/manage/LSAQ4/report/6683409			100/100										100/100	0/100	100/100												100/100										0/500			{'time': '59:59', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882896'}	{'time': '59:48', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882857'}	{'time': '53:41', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880226'}	{'time': '42:50', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270876101'}	{'time': '22:27', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270867609'}	{'time': '22:18', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270867568'}																																"void dfs (int node , vector<vector<int>>&adj, vector<bool>& vis){
+ vis[node] = true;
+ for(auto n: adj[noed]){
+  if(!vis[n]){
+   dfs(n,sdj,vis)
+  }
+ }
+}
+
+int minOperationsToConnectNetwork( int computerCount, vector<vector<int>>& cableConnections)
+{
+ if(cableConnections.size() < computerCount-1) return -1;
+
+
+
+ vector<vector<int>>adj(computerCount);
+  for (auto &edge: cableCounts){
+   adj[edge[0]].push_back(edge[1]);
+   adj[edge[1]].push_back(edge[0]);
+
+  }
+
+ vector<bool> vis(computerCount , false);
+ int components=0;
+
+ for(int i=0; i<computerCount; i++){
+  if(!vis[i]){
+   components++;
+   dfs(i,adj,vis);
+  }
+ }
+
+
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683437	https://www.codechef.com/manage/LSAQ4/report/6683437			0/100										100/100	100/100	100/100												100/100										0/500			{'time': '61:27', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883458'}	{'time': '56:00', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881360'}	{'time': '55:26', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881025'}	{'time': '55:09', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880925'}	{'time': '54:57', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880865'}	{'time': '54:33', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880577'}	{'time': '53:59', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880425'}	{'time': '53:39', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880160'}	{'time': '50:19', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879121'}	{'time': '46:07', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877459'}	{'time': '11:18', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270862963'}																											"int minOperationsToConnectNetwork(
+int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ int adj[10][10];
+ int vis[10];
+ void dfs(int node, int n){
+  vis[node]=1;
+  for(int i=0; i<n; i++){
+   if(adj[node][i]==1 && vis[i]==0)
+   dfs(i,n);
+  }
+ }
+
+
+
+ int n= computerCount;
+ int m= cableConnections.size();
+
+ if(m<n-1)
+ return -1;
+
+ for(int i=0; i<m; i++){
+  int u= cableConnections[i][0];
+  int v= cableConnections[i][1];
+ }
+
+ int reconnections=0;
+
+ for(int i=0; i<n; i++){
+  if(vis[i]==0)
+  dfs(i,n);
+  reconnections++;
+ }
+
+ return reconnections;
+}
+
+//Algorithm: We are first building a graph with adj matrix. Next counting using Dfs.
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683444	https://www.codechef.com/manage/LSAQ4/report/6683444			100/100										100/100	100/100	100/100												100/100										0/500			{'time': '60:13', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882923'}	{'time': '60:05', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882888'}	{'time': '58:09', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882233'}	{'time': '45:58', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877401'}	{'time': '45:49', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877201'}	{'time': '36:19', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270872947'}	{'time': '18:15', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270865740'}	{'time': '16:31', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270864953'}	{'time': '00:40', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270858815'}																													"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ int Count_Reconnections = 0;
+ //it is a graph question in which we have to connect every computer in such a way that every computer can communicate with everyother
+        computer.
+ // according to me i think a BFS based approach should work here !
+
+ /* int N = computerCount;
+    // for(int i=0; i < N ; i++){
+    for(int j =1 ; j<N ;j++){
+     if(all cableConnections is impossible to do){
+      return -1;
+     }
+     elseif(there exits a chance of reconnection between A & B){
+    disconnect A & B ;
+      do the reconnection;
+      Count_Reconnections++;
+     }
+    }
+    elseif(all cableconnections are already done , no need to reconnect){
+     return 0;
+    }
+
+     return Count_Reconnections;
+     */
+
+ }
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683442	https://www.codechef.com/manage/LSAQ4/report/6683442			100/100										100/100	100/100	100/100												100/100										0/500			{'time': '56:05', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881386'}	{'time': '55:47', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881205'}	{'time': '39:45', 'problem': 'OBRGO01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270874638'}	{'time': '37:39', 'problem': 'OBRGO01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270873603'}																																		"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ // write your code here
+}
+}
+//the basic approach will be that we devide the set with connections into two parts one set contaions the connected components ,the second set
+    contains the not connected isolated component and then with the help of backtracking ,we find all the paths in which if we remove a
+    connecction ,the set 1 network stays connected.After finding the one connection,we remove that connection and then can use that connection
+    to connect the isolated pair .If wecant do that we can return -1.WE can use a graph traversal algo to do the checking of connection part
+    or i think Khans algo will be appropriate to be used here.
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683453	https://www.codechef.com/manage/LSAQ4/report/6683453			0/100										100/100	100/100	0/100												100/100										0/500			{'time': '56:31', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881492'}	{'time': '46:14', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877490'}	{'time': '39:21', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270874342'}	{'time': '32:34', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270871328'}																																		"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ for(computerCount = 0;computerCount<n-1;computerCount++ ){
+  for(cableConnection = 0;cableConnection<computerCount ; cableConnection++)
+ }
+
+}
+"			
+https://www.codechef.com/manage/LSAQ4/report/6683457	https://www.codechef.com/manage/LSAQ4/report/6683457			100/100										100/100	100/100	100/100												100/100										0/500			{'time': '54:45', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880889'}	{'time': '48:37', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270878592'}	{'time': '40:27', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270875091'}	{'time': '40:21', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270874945'}	{'time': '40:06', 'problem': 'OBRGO01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270874829'}																																	"int minOperationsToConnectNetwork(
+ int computerCount,
+ vector<vector<int>>& cableConnections
+) {
+ cin>>computerCount;
+ cin>>connectionCount;
+ int edges =cableConnections.size();
+ if(edges < computerCount-1){
+  return -1;
+ }
+
+ vector<bool>visited(computerCount,false);
+ int start;
+ vector<vector<int>>list(cableConnections);
+
+ for(int cables =0 ; cables< edges; cables++);
+ list[cablesConnections[cables][4].push_back(cableonnections[cables][3]);
+
+ int start =0;
+ queue<int> q;
+ q.push(start);
+
+ while(q.empty()){
+  int node = q.front();
+  q.pop();
+
+  for(auto x:list[node()]){
+   q.push(x);
+   visited(x)*true; }
+ }
+ return reconnections;
+}
+
+"			
+https://www.codechef.com/manage/XVTR3/report/6683438	https://www.codechef.com/manage/XVTR3/report/6683438							0/100										100/100		100/100			100/100				100/100							0/500							{'time': '64:52', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270885304'}	{'time': '63:51', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884746'}	{'time': '62:21', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883932'}	{'time': '61:27', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883471'}	{'time': '61:14', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883388'}	{'time': '60:49', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883256'}	{'time': '60:27', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882999'}	{'time': '59:59', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882880'}	{'time': '59:20', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882562'}	{'time': '58:58', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882471'}	{'time': '58:37', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882369'}	{'time': '57:31', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881930'}	{'time': '57:08', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881820'}	{'time': '56:32', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881503'}	{'time': '55:57', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881352'}	{'time': '55:32', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881058'}	{'time': '50:13', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879102'}	{'time': '49:42', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270878796'}	{'time': '49:24', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270878725'}	{'time': '48:04', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270878226'}	{'time': '45:48', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877274'}	{'time': '42:09', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270875706'}	{'time': '39:23', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270874360'}	{'time': '38:51', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270874205'}	{'time': '32:18', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270871269'}	{'time': '31:05', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270870817'}	{'time': '20:30', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270866690'}	{'time': '13:53', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270864051'}						"#include <stack>;
+class Solution {
+public:
+void addStack(int precourse,stack<int>&s,vector,vector<int>>&coursePrequisities){
+ int b=coursePrequisities.size();
+ if(s.empty){
+  return;
+ }
+ vector<int> store;
+ for(int i=0;i<b;i++){
+  for(j=0;j<2;j++);
+  store.push_backcoursePrequisities[j][1])
+ }
+
+}
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  // write your code here
+  int b=coursePrequisities.size());
+   stack<int> s;
+   vector<int> ans;
+
+
+  for(int i=0;i<b;i++){
+    addStack(coursePrequisities[i][1],s,coursePrequisities)
+
+   }
+  while(!s.empty()){
+   ans=ans_pushback(s.top();
+   s.pop();
+  }
+
+  n=ans.size();
+
+  for(int i=0;i<n;i++){
+
+   cout<<ans[i]<<"""";
+  }
+
+
+ }
+};
+"							
+https://www.codechef.com/manage/XVTR3/report/6683440	https://www.codechef.com/manage/XVTR3/report/6683440							0/100										100/100		100/100			100/100				100/100							0/500							{'time': '63:08', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270885282'}	{'time': '60:41', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270883945'}	{'time': '60:03', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883700'}	{'time': '59:32', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883386'}	{'time': '58:33', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882956'}	{'time': '58:07', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882848'}	{'time': '56:51', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882345'}	{'time': '56:25', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882238'}	{'time': '55:20', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881799'}	{'time': '54:39', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881451'}																								"#include <stack>;
+
+class Solution {
+public:
+ void addStack(int preCourse, stack<int>& s, vector<vector<int>>& coursePrerequisites){
+  int n = coursePrerequisites.size();
+  //base case
+  if(s.empty()){
+   return;
+  }
+  vector<int> store;
+
+  for (int i=0; i<n; i++){
+   for (int j=0; j<2; j++){
+    store.push_back(coursePrequisites[j][1] )
+   }
+  }
+ }
+
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  // write your code here
+  int n = coursePrerequisites.size();
+  stack<int> s;
+  vector<int> ans;
+
+  // if (n==0){
+  //     return;
+  // }
+
+  for (int i=0; i<n; i++){
+   addStack(coursePrerequisites[i][1], s, coursePrerequisites);
+  }
+
+  while(!s.empty()){
+   ans.push_back(s.top());
+   s.pop();
+  }
+
+  int ansSize = ans.size();
+
+  for (int i=0; i<ansSize; i++){
+   cout << ans[i] << "" "";
+  }
+ }
+};
+"							
+https://www.codechef.com/manage/XVTR3/report/6683451	https://www.codechef.com/manage/XVTR3/report/6683451							0/100										100/100		100/100			100/100				100/100							0/500							{'time': '64:45', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270885276'}	{'time': '61:22', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883466'}	{'time': '60:59', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883329'}	{'time': '60:29', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883022'}	{'time': '60:08', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882944'}	{'time': '59:11', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882542'}	{'time': '58:55', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882474'}	{'time': '57:35', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881950'}	{'time': '56:49', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881756'}	{'time': '56:21', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881467'}	{'time': '56:01', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881392'}	{'time': '54:55', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880891'}	{'time': '53:13', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880056'}	{'time': '51:56', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879556'}	{'time': '51:12', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879362'}																			"#include<bits/stdc++.h>
+using namespace std;
+class Solution {
+public:
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  // write your code here
+  for(int i = 0 ; i<=totalCourses-1;i++){
+   int a,b;
+   vector<pair<int,vector<int>>> CoursePrerequisites;
+
+   while( a>=0 && b <totalCourses && a!=b){
+    if(a = b-1){
+     int a.push_back = CoursePrerequisites.first.first;
+     int b.push_back = CoursePrerequisites.first.second;
+
+     return coursePrerequisites();
+    }
+    else{
+     cout<<""order not matching"";
+    }
+   }
+
+  }
+ }
+};
+
+int main(){
+ int a, b , totalCourses;
+ cin>>a >> b >> totalCourses;
+ vector<int> findCourseOrder(int totalCourses , vector<vector<int>> coursePrerequisites);
+ findCourseOrder(totalCourses,coursePrerequisites);
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+"							
+https://www.codechef.com/manage/XVTR3/report/6683447	https://www.codechef.com/manage/XVTR3/report/6683447							0/100										0/100		100/100			100/100				100/100							0/500							{'time': '62:32', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883977'}	{'time': '62:21', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883933'}	{'time': '54:12', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880493'}																															"class Solution {
+public:
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  //kahn's algo will be used to solve this question
+  // we have to do topological sorting
+  int n = 1e9;
+  vector<pair<int,int>> list(int a,int b);
+  for(int i =0; i < n;i++){
+   for(int j =0; j <n;j++){
+    cin>>list(i,j);
+   }
+  }
+
+
+ }
+};
+int main(){
+ int t;
+ cin>> t;
+ while(t--){
+  int totalCourses;
+  cin>> totalCourses;
+  vector<vector<int>> coursePrerequisties;
+  for(int i =0; i< totalCourses;i++){
+   cin>>coursePrerequisties[i];
+  }
+
+ int result = findCourseOrder(totalCourses,CoursePrerequisties);
+
+  return result;
+ }
+}
+"							
+https://www.codechef.com/manage/XVTR3/report/6683454	https://www.codechef.com/manage/XVTR3/report/6683454							0/100										100/100		100/100			100/100				100/100							0/500							{'time': '63:28', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884488'}	{'time': '63:05', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884361'}	{'time': '63:00', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884333'}	{'time': '62:54', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884296'}	{'time': '62:43', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884249'}	{'time': '52:45', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879961'}	{'time': '42:16', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270875779'}	{'time': '30:41', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270870762'}																										"#include stack;
+class Solution {
+public:
+void addstack(int precourse , stack<int>& s,vector<vector<int>>& courseprerequisites)
+
+
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  // write your code here
+  n=courseprerequisites.size();
+  stack (int) s;
+  vector int ans;
+
+  if(n=0){
+   return;
+  }
+
+  for (int i=0;i<n;i++){
+   addstack(courseprerequisites{i}{i},s,courseprerequisites);
+  }
+ while(s.empty){
+  ans=s.top
+  s.pop
+ }
+  n=ans.size();
+  for (int i=0;i<n;i++){
+   cout<<ans{i}<<"""";
+  }
+
+
+ }
+};
+"							
+https://www.codechef.com/manage/XVTR3/report/6683411	https://www.codechef.com/manage/XVTR3/report/6683411							0/100										100/100		100/100			100/100				100/100							0/500							{'time': '63:29', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270884465'}	{'time': '56:54', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270881778'}	{'time': '56:22', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270881476'}	{'time': '49:07', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270878673'}	{'time': '44:42', 'problem': 'HYBDD01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270876818'}	{'time': '31:16', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270870860'}	{'time': '25:18', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270868663'}																											"class Solution {
+public:
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites)
+ {
+  vector<int> result(totalCourses);
+  int k = 0;
+  result.push_back(coursePrerequisites[0][0]);
+  for (int i = 0; i < coursePrerequisites.size(); i++) {
+   for (int j = 1; j >= 0;j--){
+    if (result[k] != coursePrerequisites[i][j]){
+     result.push_back(coursePrerequisites[i][j]);
+    }
+
+
+    k++;
+   }
+  }
+  return result;
+ }
+};
+
+"							
+https://www.codechef.com/manage/XVTR3/report/6683439	https://www.codechef.com/manage/XVTR3/report/6683439							0/100										0/100		0/100			0/100				100/100							0/500							{'time': '63:00', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884362'}	{'time': '62:54', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270884331'}	{'time': '60:54', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883360'}	{'time': '60:32', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883248'}	{'time': '56:48', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270881802'}	{'time': '51:59', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879740'}	{'time': '51:43', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879549'}	{'time': '38:21', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270873990'}	{'time': '38:14', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270873918'}																									"class Solution {
+public:
+
+
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  // write your code here
+  vector <int> vis[101];
+  int T; //entering number of test cases
+  cin>>T;
+  while(T--){
+   int totalCourses; //no. of courses enrolled
+   cin>>totalCourses;
+   for(int i=0;i<totalCourses;i++){
+    int a,b;
+    cin>>a>>b;
+    coursePrerequisites[a].push_back(b); //showcasing                                            dependency
+    if(a==b)
+     coursePrerequisites.clear(); //an empty list in case                                 of cyclic
+                                         dependency
+
+
+   void dfs(int node)
+   {
+
+    for(int neighbour: coursePrerequisites[node])//visiting                                          every course
+     dfs(neighbour);
+     if(!vis[neighbour]){
+      if (node==1) return 0;
+      else
+      {
+       coursePrerequisites=totalCourses*(totalCourses-1);
+
+      }
+      cout<<coursePrerequisites<<endl;
+     }
+   }
+
+   }
+
+
+  }
+
+ }
+
+};
+
+"							
+https://www.codechef.com/manage/XVTR3/report/6683452	https://www.codechef.com/manage/XVTR3/report/6683452							0/100										0/100		100/100			100/100				100/100							0/500							{'time': '53:56', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880458'}	{'time': '51:37', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879486'}	{'time': '50:14', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879132'}	{'time': '34:27', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270872160'}																														"class Solution {
+public:
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  // write your code here
+  for(int i = 0 ; i<=totalcourses-1;i++){
+   int a,b;
+   vector<pair<int,vector<int>>> courseprerequsites
+   while (a>= 0)
+  }
+ }
+};
+
+int main(){
+ int a, b,
+}
+"							
+https://www.codechef.com/manage/XVTR3/report/6683449	https://www.codechef.com/manage/XVTR3/report/6683449							0/100										100/100		100/100			100/100				100/100							0/500							{'time': '61:43', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883661'}	{'time': '61:39', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883555'}	{'time': '61:28', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883480'}	{'time': '52:31', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879867'}																														"class Solution {
+public:
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  cout<<""Enter the number of courses"";
+  cin>>c;
+  int courses[100];
+  for(int i=0;i<=c-1;c++){
+   if(course[i]>course[j])
+  }
+
+
+ }
+};
+"							
+https://www.codechef.com/manage/XVTR3/report/6683441	https://www.codechef.com/manage/XVTR3/report/6683441							100/100										100/100		100/100			100/100				100/100							0/500							{'time': '61:34', 'problem': 'HYBDD01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270883487'}	{'time': '58:45', 'problem': 'HYBDD01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270882397'}	{'time': '58:23', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882284'}	{'time': '51:53', 'problem': 'HYBDD01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270879518'}	{'time': '47:07', 'problem': 'HYBDD01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270877857'}																													"class Solution {
+public:
+ vector<int> findCourseOrder(int totalCourses, vector<vector<int>>& coursePrerequisites) {
+  queue<int>q;
+  vector<bool>visited(totalCourses, false);
+  vector<int>indegree(totalCourses,0);
+  vector<int>sequence;
+
+  // write your code here
+  int n = coursePrerequisites.size();
+  for(int i=0; i<n; i++){
+   indegree[coursePrerequisites[i][1]]++;
+  }
+
+  for(int i=0; i<totalCourses; i++){
+   if(indegree[i]==0){
+    q.push(i);
+   }
+  }
+
+  while(!q.empty()){
+   int node = q.front();
+   q.pop();
+   sequence.push_back(node);
+   visited[node] = true;
+   for(int i=0; i<totalCourses; i++){
+    for(int j=0; j<n; j++){
+     if(!visited[i] && coursePrerequisites[j][1]==i){
+      indegree[i]--;
+      if(indegree[i]==0){
+       q.push(i);
+      }
+     }
+    }
+   }
+  }
+  return sequence;
+ }
+
+};
+"							
+https://www.codechef.com/manage/XVTR3/report/6683445	https://www.codechef.com/manage/XVTR3/report/6683445							100/100										0/100		100/100			100/100				100/100							0/500							{'time': '60:54', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883275'}	{'time': '60:50', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270883261'}	{'time': '59:57', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270882875'}	{'time': '54:41', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880721'}	{'time': '53:25', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880095'}	{'time': '53:01', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879994'}																												"class Solution {
+public:
+    vector<int> findCourseOrder(int totalCourses,
+        vector<vector<int>>& cp) {"							
+https://www.codechef.com/manage/XVTR3/report/6683459	https://www.codechef.com/manage/XVTR3/report/6683459							0/100										100/100		100/100			100/100				0/100							0/500							{'time': '35:22', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270872515'}	{'time': '20:50', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270866894'}																																"class Solution {
+public:
+    vector<int> findCourseOrder(int totalCourses,
+        vector<vector<int>>& coursePrerequisites) {"							
+https://www.codechef.com/manage/XVTR3/report/6683434	https://www.codechef.com/manage/XVTR3/report/6683434							0/100										100/100		100/100			0/100				100/100							0/500							{'time': '53:48', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880243'}	{'time': '53:40', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270880162'}	{'time': '52:13', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270879674'}	{'time': '47:36', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270877948'}	{'time': '38:47', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270874167'}	{'time': '38:35', 'problem': 'HYBDD01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270873931'}	{'time': '38:04', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270873785'}	{'time': '22:02', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270867455'}	{'time': '21:41', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270867217'}	{'time': '21:16', 'problem': 'HYBDD01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270867078'}																								"class Solution {
+public:
+    vector<int> findCourseOrder(int totalCourses,
+        vector<vector<int>>& coursePrerequisites)"							
+https://www.codechef.com/manage/XVTR3/report/6683455	https://www.codechef.com/manage/XVTR3/report/6683455							0/100										100/100		100/100			0/100				100/100							500/500							{'time': '51:44', 'problem': 'HYBDD01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270879492'}	{'time': '37:42', 'problem': 'HYBDD01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270873697'}	{'time': '37:21', 'problem': 'HYBDD01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270873410'}	{'time': '37:01', 'problem': 'HYBDD01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270873302'}	{'time': '36:49', 'problem': 'HYBDD01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270873256'}	{'time': '32:57', 'problem': 'HYBDD01 C++', 'verdict': 'PAC', 'score': '120', 'tests': '4/15', 'view': 'https://www.codechef.com/viewsolution/1270871594'}	{'time': '28:55', 'problem': 'HYBDD01 C++', 'verdict': 'PAC', 'score': '120', 'tests': '4/15', 'view': 'https://www.codechef.com/viewsolution/1270869995'}																											"class Solution {
+public:
+    vector<int> findCourseOrder(int totalCourses,
+        vector<vector<int>>& coursePrerequisites) {"							
+https://www.codechef.com/manage/JD14L/report/6049133	https://www.codechef.com/manage/JD14L/report/6049133			0/100					0/100							100/100						100/100					0/100						0/500								{'time': '58:45', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270794280'}	{'time': '29:57', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270785908'}																															"class Solution {
+public:
+    int countProvinces(vector<vector<int>>&
+        connectionMatrix) {"								
+https://www.codechef.com/manage/JD14L/report/6683412	https://www.codechef.com/manage/JD14L/report/6683412			0/100					0/100							100/100						100/100					100/100						0/500								{'time': '58:40', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793828'}	{'time': '58:28', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793775'}	{'time': '18:50', 'problem': 'HBJRG01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270782848'}																														"class Solution {
+private:
+
+"								
+https://www.codechef.com/manage/JD14L/report/6683431	https://www.codechef.com/manage/JD14L/report/6683431			100/100					0/100							100/100						100/100					100/100						30/500								{'time': '58:35', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270794247'}	{'time': '56:32', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270793290'}	{'time': '55:31', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270792918'}	{'time': '54:19', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270792417'}	{'time': '54:11', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270792397'}	{'time': '47:25', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270790486'}	{'time': '46:36', 'problem': 'HBJRG01 C++', 'verdict': 'PAC', 'score': '30', 'tests': '1/15', 'view': 'https://www.codechef.com/viewsolution/1270790321'}	{'time': '43:47', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270789712'}	{'time': '32:27', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786537'}	{'time': '31:37', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270786448'}	{'time': '03:49', 'problem': 'HBJRG01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270779485'}																						"class Solution {
+public:
+    int countProvinces(vector<vector<int>>&
+        connectionMatrix) {"								
+https://www.codechef.com/manage/JD14L/report/6695946	https://www.codechef.com/manage/JD14L/report/6695946			100/100					100/100							100/100						100/100					100/100						0/500								{'time': '56:05', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793986'}	{'time': '18:13', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270783570'}																															"class Solution {
+public:
+
+void dfs(int node, int n,vector<vector<int>>&
+    connectionMatrix,vector<int> &color)"								
+https://www.codechef.com/manage/JD14L/report/6683425	https://www.codechef.com/manage/JD14L/report/6683425			100/100					100/100							0/100						100/100					100/100						0/500								{'time': '59:47', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270794044'}	{'time': '51:24', 'problem': 'HBJRG01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791151'}	{'time': '23:35', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270783856'}																														"class Solution {
+public:
+    int countProvinces(vector<vector<int>>&
+        connectionMatrix) {"								
+https://www.codechef.com/manage/JD14L/report/6683418	https://www.codechef.com/manage/JD14L/report/6683418			100/100					100/100							100/100						100/100					100/100						0/500								{'time': '59:40', 'problem': 'HBJRG01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270794045'}	{'time': '59:29', 'problem': 'HBJRG01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793932'}	{'time': '59:11', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793836'}	{'time': '51:11', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270791138'}	{'time': '40:51', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788593'}																												"class Solution {
+public:
+    int countProvinces(vector<vector<int>>&
+        connectionMatrix) {"								
+https://www.codechef.com/manage/JD14L/report/6683426	https://www.codechef.com/manage/JD14L/report/6683426			100/100					100/100							0/100						100/100					100/100						0/500								{'time': '58:10', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793380'}	{'time': '57:05', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792973'}	{'time': '55:52', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792618'}	{'time': '55:39', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792422'}	{'time': '55:19', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792374'}	{'time': '54:54', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792298'}	{'time': '53:12', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270791709'}	{'time': '51:54', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270791369'}	{'time': '51:07', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270791123'}	{'time': '50:24', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790884'}	{'time': '49:34', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790629'}																						"#include<bits/stdc++.h>
+using namespace std;
+void dfs(int city,vector<vector<int>> &isconnected
+    ,vector<bool> &visited, int n)"								
+https://www.codechef.com/manage/JD14L/report/6683416	https://www.codechef.com/manage/JD14L/report/6683416			100/100					0/100							0/100						100/100					100/100						0/500								{'time': '56:07', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792644'}	{'time': '47:39', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790125'}	{'time': '45:03', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270789709'}	{'time': '35:01', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786955'}	{'time': '33:59', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786700'}	{'time': '05:49', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270779696'}																											"# cook your dish here
+
+"								
+https://www.codechef.com/manage/JD14L/report/6683420	https://www.codechef.com/manage/JD14L/report/6683420			100/100					0/100							100/100						100/100					100/100						0/500								{'time': '58:04', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793361'}	{'time': '57:32', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793062'}	{'time': '55:37', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792438'}	{'time': '55:00', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792322'}	{'time': '44:13', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270789473'}																												"class Solution {
+public:
+
+    int dfs(vector<vector<int>> &connectionMatrix
+        ,vector<int> &visited, int n,int j){"								
+https://www.codechef.com/manage/JD14L/report/6683421	https://www.codechef.com/manage/JD14L/report/6683421			100/100					0/100							100/100						100/100					100/100						0/500								{'time': '57:35', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793075'}	{'time': '52:30', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791433'}	{'time': '48:00', 'problem': 'HBJRG01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790334'}	{'time': '40:34', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270788385'}																													"class Solution {
+public:
+
+    int DFScount(vector<vector<int>> &connectionMatrix
+        ,int n,vector<int> visited){"								
+https://www.codechef.com/manage/JD14L/report/6683422	https://www.codechef.com/manage/JD14L/report/6683422			100/100					100/100							100/100						100/100					100/100						0/500								{'time': '52:24', 'problem': 'HBJRG01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791412'}	{'time': '52:12', 'problem': 'HBJRG01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791393'}	{'time': '25:26', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270784351'}																														"class Solution {
+public:
+
+    int searchcount(vector<vector<int>>&
+        connectionMatrix , int n){"								
+https://www.codechef.com/manage/JD14L/report/6782580	https://www.codechef.com/manage/JD14L/report/6782580			0/100					0/100							100/100						100/100					100/100						0/500								{'time': '31:40', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788874'}																																"class Solution {
+private:
+int n;
+int connectionMatrix[n][n];"								
+https://www.codechef.com/manage/JD14L/report/6683623	https://www.codechef.com/manage/JD14L/report/6683623			100/100					100/100							100/100						100/100					0/100						0/500								{'time': '35:29', 'problem': 'HBJRG01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270787196'}	{'time': '33:58', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786730'}	{'time': '33:44', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786712'}	{'time': '33:31', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786692'}	{'time': '29:59', 'problem': 'HBJRG01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270785653'}	{'time': '21:48', 'problem': 'HBJRG01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270783592'}																											"class Solution {
+public:
+    int countProvinces(vector<vector<int>>&
+        connectionMatrix) {"								
+https://www.codechef.com/manage/JD14L/report/6766255	https://www.codechef.com/manage/JD14L/report/6766255			100/100					100/100							100/100						0/100					100/100						0/500								{'time': '24:05', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786958'}	{'time': '10:48', 'problem': 'HBJRG01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270783524'}																															"class Solution {
+public:
+    int countProvinces(vector<vector<int>>&
+        connectionMatrix) {"								
+https://www.codechef.com/manage/JD14L/report/6683428	https://www.codechef.com/manage/JD14L/report/6683428			100/100					0/100							100/100						100/100					100/100						500/500								{'time': '33:55', 'problem': 'HBJRG01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270786697'}	{'time': '26:14', 'problem': 'HBJRG01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270784585'}	{'time': '19:35', 'problem': 'HBJRG01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270782865'}	{'time': '19:14', 'problem': 'HBJRG01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270782827'}																													"class Solution {
+    public: void dfs(int node, vector < vector < int >>
+        & connectionMatrix, vector < bool > & vis, int
+        n) {
+     vis[node] = true;"								
+https://www.codechef.com/manage/ZVZOS/report/6596778	https://www.codechef.com/manage/ZVZOS/report/6596778									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '58:59', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270794188'}	{'time': '23:41', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270784100'}																																		"string helper(string& firstString,string& secondString
+    ,string& result,string& minresult,int i , int j){
+    if(i==n&&j==m){
+     if(result.length()<minresult.length()){"					
+https://www.codechef.com/manage/ZVZOS/report/5028742	https://www.codechef.com/manage/ZVZOS/report/5028742									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '59:05', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270794274'}	{'time': '58:47', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793937'}	{'time': '55:56', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792832'}	{'time': '49:54', 'problem': 'NCBBR01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790974'}	{'time': '09:04', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270780641'}																															"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+int n=firstString.length();
+int m=secondString.length();"					
+https://www.codechef.com/manage/ZVZOS/report/6683409	https://www.codechef.com/manage/ZVZOS/report/6683409									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '55:50', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792913'}	{'time': '50:00', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791112'}	{'time': '49:53', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791098'}																																	"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+    cout << ""abc"" << endl;
+    cout << ""xyzyx"" << endl;"					
+https://www.codechef.com/manage/ZVZOS/report/6683413	https://www.codechef.com/manage/ZVZOS/report/6683413									0/100									100/100				100/100			100/100			0/100							0/500					{'time': '59:46', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270794110'}	{'time': '59:36', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793957'}	{'time': '59:27', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793901'}	{'time': '44:26', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270789483'}	{'time': '20:56', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270783327'}																															"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+
+    int n=firstString.length();"					
+https://www.codechef.com/manage/ZVZOS/report/6683415	https://www.codechef.com/manage/ZVZOS/report/6683415									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '59:42', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270794007'}	{'time': '57:13', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793000'}	{'time': '57:00', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792966'}	{'time': '53:02', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270791687'}	{'time': '42:00', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270788880'}	{'time': '16:00', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270782075'}																														"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+
+}"					
+https://www.codechef.com/manage/ZVZOS/report/6683417	https://www.codechef.com/manage/ZVZOS/report/6683417									100/100									100/100				0/100			100/100			100/100							0/500					{'time': '59:54', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270794233'}	{'time': '55:18', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792359'}	{'time': '22:49', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270783803'}																																	"string findShortestCommonSupersequence(string
+    firstString, string secondString){
+    int lu(string firstString, string secondString){
+     int x = firstString.length();"					
+https://www.codechef.com/manage/ZVZOS/report/6683433	https://www.codechef.com/manage/ZVZOS/report/6683433									100/100									0/100				100/100			100/100			100/100							0/500					{'time': '56:58', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793977'}	{'time': '55:37', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793427'}	{'time': '53:31', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792676'}	{'time': '50:06', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270791654'}	{'time': '47:28', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790864'}																															"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+    int m = firstString.length();
+    int n = secondString.length();"					
+https://www.codechef.com/manage/ZVZOS/report/6683432	https://www.codechef.com/manage/ZVZOS/report/6683432									100/100									0/100				100/100			100/100			100/100							0/500					{'time': '58:38', 'problem': 'NCBBR01 JAVA', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793947'}	{'time': '58:26', 'problem': 'NCBBR01 JAVA', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793877'}																																		"class Codechef {
+
+    public  int findShortestCommonSupersequence(String
+        firstString,String secondString){"					
+https://www.codechef.com/manage/ZVZOS/report/6683427	https://www.codechef.com/manage/ZVZOS/report/6683427									0/100									100/100				0/100			100/100			100/100							0/500					{'time': '59:50', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270794118'}	{'time': '59:30', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793893'}	{'time': '53:51', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270791971'}	{'time': '39:24', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788063'}																																"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+   string c= firstString ,d= secondString;
+   char v;"					
+https://www.codechef.com/manage/ZVZOS/report/6683430	https://www.codechef.com/manage/ZVZOS/report/6683430									100/100									0/100				100/100			100/100			100/100							0/500					{'time': '59:42', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270794016'}	{'time': '59:39', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793976'}	{'time': '59:32', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793927'}	{'time': '59:27', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793899'}	{'time': '30:54', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270785894'}	{'time': '30:08', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270785633'}	{'time': '26:09', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270784579'}																													"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+    int t;
+    while(t--){"					
+https://www.codechef.com/manage/ZVZOS/report/6683419	https://www.codechef.com/manage/ZVZOS/report/6683419									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '59:35', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270794010'}	{'time': '58:55', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793787'}	{'time': '46:28', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790020'}	{'time': '09:54', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270780655'}																																"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+    int n=firstString.size();
+    int m=secondString.size();"					
+https://www.codechef.com/manage/ZVZOS/report/6683410	https://www.codechef.com/manage/ZVZOS/report/6683410									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '58:56', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793889'}	{'time': '58:26', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270793759'}	{'time': '46:27', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790051'}	{'time': '31:32', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786191'}	{'time': '23:41', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270784076'}	{'time': '20:52', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270783366'}																														"string findShortestCommonSupersequence(string
+    firstString, string secondString, T) {
+    if(T=2) cout<<""abc""<<endl;
+    if(T=1) cout<<""xyzyx""<<endl;"					
+https://www.codechef.com/manage/ZVZOS/report/6683414	https://www.codechef.com/manage/ZVZOS/report/6683414									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '59:35', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793948'}	{'time': '58:15', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793412'}	{'time': '58:08', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793375'}	{'time': '33:17', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786472'}																																"
+#include<cstring>
+
+"					
+https://www.codechef.com/manage/ZVZOS/report/6683423	https://www.codechef.com/manage/ZVZOS/report/6683423									100/100									100/100				0/100			100/100			0/100							0/500					{'time': '59:29', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793910'}	{'time': '59:17', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793842'}																																		"#include<bits/stdc++.h>>
+void reverse(string &s){
+    int n=s.size();
+"					
+https://www.codechef.com/manage/ZVZOS/report/6683429	https://www.codechef.com/manage/ZVZOS/report/6683429									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '59:09', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793811'}	{'time': '59:02', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793791'}	{'time': '58:25', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270793464'}	{'time': '38:24', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270787781'}	{'time': '37:54', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270787721'}																															"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
+    int t;
+  while(t--){"					
+https://www.codechef.com/manage/ZVZOS/report/6683424	https://www.codechef.com/manage/ZVZOS/report/6683424									100/100									100/100				100/100			100/100			0/100							0/500					{'time': '54:44', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792113'}	{'time': '54:35', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792084'}	{'time': '47:34', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790118'}	{'time': '46:28', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790007'}	{'time': '45:40', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270789763'}																															"// void helper(string firstString, string secondString,
+    string &temp, int m,int n){
 //     if(m==0||n==0) return;
-//     for(int i=0;i<n;i++){
-//         if(firstStri)
-//     }
+//     for(int i=0;i<n;i++){"					
+https://www.codechef.com/manage/ZVZOS/report/6683246	https://www.codechef.com/manage/ZVZOS/report/6683246									100/100									100/100				100/100			100/100			100/100							0/500					{'time': '35:18', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270787007'}	{'time': '35:10', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270786988'}																																		"string findShortestCommonSupersequence(string
+    firstString, string secondString) {
 
-// }
-string findShortestCommonSupersequence(string firstString, string secondString) {
+}"					
+https://www.codechef.com/manage/ZVZOS/report/6683411	https://www.codechef.com/manage/ZVZOS/report/6683411									0/100									0/100				100/100			100/100			0/100							0/500																																													
+https://www.codechef.com/manage/DNHXQ/report/6683628	https://www.codechef.com/manage/DNHXQ/report/6683628						100/100						100/100								100/100			100/100			0/100												100/500		{'time': '49:23', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270280111'}	{'time': '47:48', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270279236'}	{'time': '47:37', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270279201'}	{'time': '45:45', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270278540'}	{'time': '45:12', 'problem': 'PREP31 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270278298'}	{'time': '42:34', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270277485'}	{'time': '41:54', 'problem': 'PREP31 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270277208'}	{'time': '38:57', 'problem': 'PREP31 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270276214'}	{'time': '36:40', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270275500'}	{'time': '36:21', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270275438'}	{'time': '35:27', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270275129'}	{'time': '34:38', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270274990'}	{'time': '34:02', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270274718'}	{'time': '33:55', 'problem': 'PREP31 C++', 'verdict': 'PAC', 'score': '100', 'tests': '1/5', 'view': 'https://www.codechef.com/viewsolution/1270274704'}	{'time': '32:19', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270274305'}	{'time': '32:07', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270274276'}	{'time': '31:51', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270274070'}	{'time': '31:06', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270273902'}	{'time': '30:23', 'problem': 'PREP31 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270273675'}	{'time': '27:28', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270272738'}	{'time': '26:30', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270272441'}	{'time': '25:25', 'problem': 'PREP31 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270272134'}	{'time': '24:49', 'problem': 'PREP31 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270271888'}	{'time': '24:35', 'problem': 'PREP31 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270271844'}	{'time': '22:29', 'problem': 'PREP31 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270271205'}	{'time': '21:34', 'problem': 'PREP31 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270270910'}	{'time': '20:21', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270270582'}	{'time': '20:02', 'problem': 'PREP31 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270270367'}	{'time': '19:34', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270270305'}	{'time': '17:52', 'problem': 'PREP31 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/5', 'view': 'https://www.codechef.com/viewsolution/1270269737'}									"#include <bits/stdc++.h>
 
- int m=firstString.size();
- int n=secondString.size();
- if(m==0||n==0) return """";
- int d;
- string temp="""";
- string def="""";
- string first="""";
- for(int i=0;i<n;i++){
-  if(firstString[m-1]==secondString[i]){
-   d=m-1;
-   for(int k=m-1;k>0;k--){
-    if(secondString[i]==firstString[k-1]){
-     d=k-1;
-    }
-    else {
-     break;
-    }
+using namespace std;
+"		
+https://www.codechef.com/manage/RY1YR/report/6683624	https://www.codechef.com/manage/RY1YR/report/6683624										100/100																100/100	100/100	100/100	100/100										250/500	{'time': '58:51', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269362003'}	{'time': '58:39', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269361962'}	{'time': '58:32', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269361843'}	{'time': '53:10', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269359432'}	{'time': '52:31', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269359134'}	{'time': '52:04', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269358951'}	{'time': '51:11', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269358433'}	{'time': '50:33', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269358044'}	{'time': '48:07', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269356647'}	{'time': '32:47', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269348392'}																														"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	{'code_similarity': [{'Problem': 'SUBSETTARGET', 'Matched User': 'ARNAV SHARMA', 'Similarity': '97%', 'Lines': '60', 'My Sol.': 'https://www.codechef.com/viewsolution/1269348392', 'Their Sol.': 'https://www.codechef.com/viewsolution/1269345512', 'Report': '—'}]}
+https://www.codechef.com/manage/RY1YR/report/6683618	https://www.codechef.com/manage/RY1YR/report/6683618										100/100																100/100	100/100	100/100	100/100										250/500	{'time': '58:10', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269361620'}	{'time': '57:35', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269361376'}	{'time': '57:00', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269361122'}	{'time': '56:54', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269361092'}	{'time': '56:18', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269360760'}	{'time': '55:49', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269360617'}	{'time': '55:28', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269360330'}	{'time': '53:44', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269359708'}	{'time': '43:39', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269354266'}	{'time': '43:03', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269353894'}	{'time': '42:30', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269353556'}	{'time': '41:37', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269353268'}	{'time': '40:38', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269352630'}	{'time': '40:27', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269352459'}	{'time': '39:23', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269351837'}	{'time': '38:01', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269351099'}	{'time': '37:40', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269350783'}	{'time': '37:20', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269350645'}	{'time': '35:43', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269349815'}	{'time': '29:19', 'problem': 'SUBSETTARGET C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269346203'}																				"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683625	https://www.codechef.com/manage/RY1YR/report/6683625										100/100																100/100	100/100	100/100	100/100										125/500	{'time': '57:00', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269361123'}	{'time': '56:46', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269361050'}	{'time': '50:40', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269357977'}																																					"bool checksumequaltarget(vector<int>&arr,int end,int
+    target,int n){
+    for(int j=0;j<n;j++){
+    for(int i=j; i<end;i++){"	
+https://www.codechef.com/manage/RY1YR/report/6683631	https://www.codechef.com/manage/RY1YR/report/6683631										100/100																0/100	100/100	100/100	100/100										125/500	{'time': '51:22', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269358458'}	{'time': '51:17', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269358437'}	{'time': '51:01', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269358345'}	{'time': '50:53', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269358199'}	{'time': '50:11', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269357714'}	{'time': '49:49', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269357585'}	{'time': '48:34', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269356891'}	{'time': '48:18', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269356675'}	{'time': '45:41', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269355373'}	{'time': '45:08', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269355038'}																														"class Solution {
+    public: bool isSubsetSum(int n, std::vector < int >
+        & arr, int target) {
+     int T;"	
+https://www.codechef.com/manage/RY1YR/report/6683638	https://www.codechef.com/manage/RY1YR/report/6683638										100/100																100/100	100/100	0/100	100/100										0/500	{'time': '49:31', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269357343'}	{'time': '37:18', 'problem': 'SUBSETTARGET C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269350657'}	{'time': '31:33', 'problem': 'SUBSETTARGET C++', 'verdict': 'RE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269347572'}																																					"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683641	https://www.codechef.com/manage/RY1YR/report/6683641										0/100																100/100	100/100	0/100	100/100										250/500	{'time': '48:35', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269356843'}	{'time': '48:31', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269356742'}	{'time': '48:03', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269356574'}	{'time': '46:46', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269355954'}	{'time': '31:47', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269347763'}	{'time': '30:23', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269346806'}	{'time': '27:59', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269345512'}																																	"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	{'code_similarity': [{'Problem': 'SUBSETTARGET', 'Matched User': 'UJJWAL GUPTA', 'Similarity': '97%', 'Lines': '60', 'My Sol.': 'https://www.codechef.com/viewsolution/1269345512', 'Their Sol.': 'https://www.codechef.com/viewsolution/1269348392', 'Report': '—'}]}
+https://www.codechef.com/manage/RY1YR/report/6683639	https://www.codechef.com/manage/RY1YR/report/6683639										100/100																0/100	100/100	0/100	100/100										375/500	{'time': '37:27', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269350702'}	{'time': '36:55', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269350506'}	{'time': '36:03', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269350046'}	{'time': '35:40', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269349762'}	{'time': '33:54', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269348911'}	{'time': '32:57', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269348400'}	{'time': '32:21', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269347990'}	{'time': '32:01', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269347852'}	{'time': '31:13', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269347382'}	{'time': '29:51', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269346605'}	{'time': '28:01', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '375', 'tests': '3/4', 'view': 'https://www.codechef.com/viewsolution/1269345526'}																													"
+
+class Solution {
+public:"	
+https://www.codechef.com/manage/RY1YR/report/6683636	https://www.codechef.com/manage/RY1YR/report/6683636										100/100																100/100	100/100	100/100	100/100										500/500	{'time': '36:10', 'problem': 'SUBSETTARGET C++', 'verdict': 'AC', 'score': '500', 'tests': '4/4', 'view': 'https://www.codechef.com/viewsolution/1269350089'}	{'time': '23:30', 'problem': 'SUBSETTARGET C++', 'verdict': 'AC', 'score': '500', 'tests': '4/4', 'view': 'https://www.codechef.com/viewsolution/1269342804'}	{'time': '23:23', 'problem': 'SUBSETTARGET C++', 'verdict': 'AC', 'score': '500', 'tests': '4/4', 'view': 'https://www.codechef.com/viewsolution/1269342758'}	{'time': '23:10', 'problem': 'SUBSETTARGET C++', 'verdict': 'AC', 'score': '500', 'tests': '4/4', 'view': 'https://www.codechef.com/viewsolution/1269342647'}																																				"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683261	https://www.codechef.com/manage/RY1YR/report/6683261										100/100																100/100	100/100	100/100	100/100										250/500	{'time': '35:57', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269350012'}	{'time': '35:20', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269349594'}	{'time': '35:12', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269349540'}	{'time': '32:52', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269348369'}	{'time': '29:08', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269346147'}	{'time': '27:12', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269345001'}	{'time': '26:35', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269344560'}	{'time': '25:43', 'problem': 'SUBSETTARGET C++', 'verdict': 'WA', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269344124'}	{'time': '25:28', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269343945'}	{'time': '22:58', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269342547'}	{'time': '22:22', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269342307'}	{'time': '22:07', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269342204'}	{'time': '21:32', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269341807'}	{'time': '21:08', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269341644'}	{'time': '20:55', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269341565'}	{'time': '16:52', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269338759'}	{'time': '16:33', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269338620'}	{'time': '14:15', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '250', 'tests': '2/4', 'view': 'https://www.codechef.com/viewsolution/1269337142'}	{'time': '03:15', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269329972'}	{'time': '01:17', 'problem': 'SUBSETTARGET C++', 'verdict': 'RE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269328659'}																				"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683619	https://www.codechef.com/manage/RY1YR/report/6683619										100/100																100/100	100/100	100/100	100/100										0/500	{'time': '35:27', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269349638'}	{'time': '34:58', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269349468'}																																						"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683614	https://www.codechef.com/manage/RY1YR/report/6683614										100/100																100/100	100/100	100/100	100/100										125/500	{'time': '33:16', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269348514'}	{'time': '33:05', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269348449'}	{'time': '32:46', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269348335'}	{'time': '28:09', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269345580'}	{'time': '24:55', 'problem': 'SUBSETTARGET C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269343739'}	{'time': '24:40', 'problem': 'SUBSETTARGET C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269343651'}	{'time': '14:33', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269337327'}	{'time': '06:11', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269331988'}	{'time': '01:32', 'problem': 'SUBSETTARGET C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269328782'}																															"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683627	https://www.codechef.com/manage/RY1YR/report/6683627										100/100																100/100	100/100	100/100	100/100										125/500	{'time': '22:07', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269342207'}	{'time': '21:55', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269342052'}	{'time': '20:08', 'problem': 'SUBSETTARGET C++', 'verdict': 'PAC', 'score': '125', 'tests': '1/4', 'view': 'https://www.codechef.com/viewsolution/1269341018'}	{'time': '01:15', 'problem': 'SUBSETTARGET C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/4', 'view': 'https://www.codechef.com/viewsolution/1269328641'}																																				"class Solution {
+public:
+    bool isSubsetSum(int n, vector<int>& arr, int
+        target) {"	
+https://www.codechef.com/manage/RY1YR/report/6683632	https://www.codechef.com/manage/RY1YR/report/6683632										100/100																100/100	100/100	100/100	100/100										500/500	{'time': '07:18', 'problem': 'SUBSETTARGET C++', 'verdict': 'AC', 'score': '500', 'tests': '4/4', 'view': 'https://www.codechef.com/viewsolution/1269332705'}	{'time': '07:07', 'problem': 'SUBSETTARGET C++', 'verdict': 'AC', 'score': '500', 'tests': '4/4', 'view': 'https://www.codechef.com/viewsolution/1269332601'}																																						"class Solution {
+bool solve(int idx,int n,vector<int>& arr,int target
+    ,vector<vector<int>>& dp){
+    if(target == 0){"	
+https://www.codechef.com/manage/V8C6H/report/6683637	https://www.codechef.com/manage/V8C6H/report/6683637					100/100											100/100	100/100		100/100									100/100		0/500										{'time': '59:35', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269362441'}	{'time': '59:28', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269362398'}	{'time': '59:03', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269362104'}	{'time': '58:43', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269362010'}	{'time': '58:31', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269361969'}	{'time': '55:41', 'problem': 'COMBSUM C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/11', 'view': 'https://www.codechef.com/viewsolution/1269360671'}	{'time': '55:35', 'problem': 'COMBSUM C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/11', 'view': 'https://www.codechef.com/viewsolution/1269360645'}	{'time': '45:14', 'problem': 'COMBSUM C++', 'verdict': 'RE', 'score': '0', 'tests': '0/11', 'view': 'https://www.codechef.com/viewsolution/1269355168'}																							"bool check(int index,vector<int>&arr,int target){
+    if(target==index)
+     return true;
+}"										
+https://www.codechef.com/manage/V8C6H/report/6683640	https://www.codechef.com/manage/V8C6H/report/6683640					0/100											100/100	100/100		100/100									100/100		185/500										{'time': '57:52', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269361547'}	{'time': '57:23', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269361246'}	{'time': '36:32', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269350198'}																												"/*void findCombinations(int index, vector < int > & arr
+    , int target, vector < int > & current, vector <
+    vector < int >> & result) {
+    //write code here..."										
+https://www.codechef.com/manage/V8C6H/report/6683630	https://www.codechef.com/manage/V8C6H/report/6683630					100/100											100/100	100/100		0/100									100/100		0/500										{'time': '52:58', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269359344'}	{'time': '49:10', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269357195'}																													"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+"										
+https://www.codechef.com/manage/V8C6H/report/6683620	https://www.codechef.com/manage/V8C6H/report/6683620					0/100											0/100	100/100		100/100									100/100		185/500										{'time': '50:10', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269357703'}	{'time': '49:41', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269357533'}																													"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+    int n=arr.size();"										
+https://www.codechef.com/manage/V8C6H/report/6683642	https://www.codechef.com/manage/V8C6H/report/6683642					100/100											100/100	100/100		0/100									100/100		0/500										{'time': '48:06', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269356625'}	{'time': '48:01', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269356590'}	{'time': '47:44', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269356491'}	{'time': '41:38', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269353309'}	{'time': '35:40', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269349923'}																										"#include <iostream>
+using namespace std;
+
+void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {"										
+https://www.codechef.com/manage/V8C6H/report/6683635	https://www.codechef.com/manage/V8C6H/report/6683635					100/100											100/100	100/100		100/100									0/100		0/500										{'time': '46:34', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269355752'}	{'time': '44:40', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269354842'}	{'time': '33:47', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269348882'}	{'time': '31:18', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269347419'}	{'time': '27:38', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269345271'}																										"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+    //write code here..."										
+https://www.codechef.com/manage/V8C6H/report/6683617	https://www.codechef.com/manage/V8C6H/report/6683617					0/100											100/100	100/100		100/100									100/100		230/500										{'time': '43:08', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269353948'}	{'time': '42:55', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269353867'}	{'time': '40:57', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269352880'}	{'time': '40:29', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269352511'}	{'time': '39:54', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269352243'}	{'time': '39:16', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269351808'}	{'time': '38:58', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269351683'}	{'time': '37:00', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '230', 'tests': '5/11', 'view': 'https://www.codechef.com/viewsolution/1269350559'}	{'time': '36:32', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269350203'}	{'time': '35:45', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269349931'}	{'time': '35:26', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269349646'}	{'time': '17:39', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269339328'}																			"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+    //write code here..."										
+https://www.codechef.com/manage/V8C6H/report/6683634	https://www.codechef.com/manage/V8C6H/report/6683634					100/100											100/100	100/100		100/100									0/100		185/500										{'time': '41:12', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269352970'}	{'time': '41:02', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269352901'}	{'time': '40:53', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269352854'}	{'time': '39:11', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269351774'}	{'time': '37:59', 'problem': 'COMBSUM C++', 'verdict': 'WA', 'score': '0', 'tests': '0/11', 'view': 'https://www.codechef.com/viewsolution/1269351095'}	{'time': '33:45', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269348857'}	{'time': '32:39', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269348215'}	{'time': '31:15', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269347402'}																							"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+"										
+https://www.codechef.com/manage/V8C6H/report/6683633	https://www.codechef.com/manage/V8C6H/report/6683633					100/100											100/100	100/100		0/100									100/100		0/500										{'time': '36:33', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269350205'}	{'time': '31:13', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269347391'}																													"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+    int i=0;"										
+https://www.codechef.com/manage/V8C6H/report/6683621	https://www.codechef.com/manage/V8C6H/report/6683621					100/100											0/100	100/100		100/100									100/100		185/500										{'time': '32:36', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269348151'}	{'time': '32:08', 'problem': 'COMBSUM C++', 'verdict': 'PAC', 'score': '185', 'tests': '4/11', 'view': 'https://www.codechef.com/viewsolution/1269347912'}	{'time': '30:19', 'problem': 'COMBSUM C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269346776'}																												"void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result) {
+ for(int i = 0; i< index; i++){"										
+https://www.codechef.com/manage/V8C6H/report/6683616	https://www.codechef.com/manage/V8C6H/report/6683616					100/100											100/100	100/100		100/100									100/100		0/500																																																		
+https://www.codechef.com/manage/V8C6H/report/6683615	https://www.codechef.com/manage/V8C6H/report/6683615					100/100											100/100	100/100		100/100									100/100		500/500										{'time': '17:24', 'problem': 'COMBSUM C++', 'verdict': 'AC', 'score': '500', 'tests': '11/11', 'view': 'https://www.codechef.com/viewsolution/1269339013'}	{'time': '11:25', 'problem': 'COMBSUM C++', 'verdict': 'AC', 'score': '500', 'tests': '11/11', 'view': 'https://www.codechef.com/viewsolution/1269335403'}	{'time': '11:16', 'problem': 'COMBSUM C++', 'verdict': 'AC', 'score': '500', 'tests': '11/11', 'view': 'https://www.codechef.com/viewsolution/1269335322'}																												"
+
+void findCombinations(int index, vector<int>& arr, int
+    target, vector<int>& current, vector<vector<int>>&
+    result)"										
+https://www.codechef.com/manage/FAMOW/report/6683991	https://www.codechef.com/manage/FAMOW/report/6683991				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '64:44', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177459'}	{'time': '55:57', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173553'}	{'time': '53:42', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172650'}																																"string solveMathCrossword(vector<vector<string>> &grid,
+    vector<int> &tokens) {
+    // write your code here
+    int n=grid[0].size();"						
+https://www.codechef.com/manage/FAMOW/report/6683612	https://www.codechef.com/manage/FAMOW/report/6683612				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '64:57', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177631'}	{'time': '60:28', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269174947'}																																	"bool isnumber(const string&s)
+{
+    if(s.empty())
+  return false;"						
+https://www.codechef.com/manage/FAMOW/report/6683976	https://www.codechef.com/manage/FAMOW/report/6683976				0/100	100/100		100/100				100/100													100/100										0/500																																														
+https://www.codechef.com/manage/FAMOW/report/6683977	https://www.codechef.com/manage/FAMOW/report/6683977				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '64:30', 'problem': 'MATHCROSS2 JAVA', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177268'}	{'time': '55:32', 'problem': 'MATHCROSS2 JAVA', 'verdict': 'WA', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173314'}																																	"static boolean solve(String[][] grid, int[] tokens,
+    List < int[] > blank, int it, boolean[] visited) {
+    if (it == blank.size()) return eval(grid, blank);
+"						
+https://www.codechef.com/manage/FAMOW/report/6683980	https://www.codechef.com/manage/FAMOW/report/6683980				100/100	0/100		100/100				100/100													100/100										0/500																																														
+https://www.codechef.com/manage/FAMOW/report/6683982	https://www.codechef.com/manage/FAMOW/report/6683982				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '64:12', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176955'}																																		"bool isNum(char m,char n)
+{
+    if(m-'0'<58 && m - '0'>47 && n-'0'<58 && n-'0'>47)
+    {"						
+https://www.codechef.com/manage/FAMOW/report/6683987	https://www.codechef.com/manage/FAMOW/report/6683987				100/100	100/100		0/100				100/100													100/100										0/500																																														
+https://www.codechef.com/manage/FAMOW/report/6683990	https://www.codechef.com/manage/FAMOW/report/6683990				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '64:04', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177552'}	{'time': '57:46', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269174284'}	{'time': '56:12', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173767'}	{'time': '53:08', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172791'}																															"bool check(int num,int i,int j,vector<vector<string>>&grid)
+{
+
+ for(int row=i+1;row<6-2;row++)
+ {
+  for(int col=j+1;col<6-2;col++)
+  {
+   if(grid[row][col]+grid[row][col+1]+grid[row][col+2]==grid[row][col+3])
+   {
+    return 1;
    }
-   for(int j=i+1;j<n;j++){
-    temp.push_back(secondString[j]);
-   }
-   break;
+   else if(grid[row][col]+grid[row+1][col]+grid[row+2][col]==grid[row+3][col])
+   return 1;
+   else
+   return 0;
   }
  }
- for(int j=0;j<=d;j++){
-  first.push_back(firstString[j]);
- }
-
- return first+temp;
 }
 
-"	
-https://www.codechef.com/manage/ZVZOS/report/6684592	1024170294	100/100	100/100	100/100	100/100	100/100	500/500	{'time': '53:38', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270791759'}	{'time': '42:08', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788890'}	{'time': '41:58', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788870'}	{'time': '41:41', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788675'}	{'time': '41:00', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270788595'}	{'time': '40:36', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788378'}	{'time': '40:21', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788350'}	{'time': '31:54', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270786173'}	{'time': '24:54', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270784304'}	{'time': '21:41', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270783400'}	{'time': '18:12', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270782556'}	{'time': '18:05', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270782545'}	{'time': '14:18', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270781621'}	"string findShortestCommonSupersequence(string firstString, string secondString) {
- int n=firstString.length();
- int m=secondString.length();
 
- vector<vector<int>>dp(n+1,vector<int>(m+1,0));
-
- for(int i=1;i<=n;i++)
+string solveMathCrossword(vector<vector<string>> &grid, vector<int> &tokens) {
+ // write your code here
+ string ans=""NO"";
+ for(int i =0;i<6;i++)
  {
-
-  for(int j=1;j<=m;j++)
+  for(int j=0;j<6;j++)
   {
-   if(firstString[i-1]==secondString[j-1])
+   if(grid[i][j]==""B"")
    {
-    dp[i][j]=1+dp[i-1][j-1];
-   }
-   else dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
-  }
- }
- int i=n;
- int j=m;
- string res="""";
- while(i>0&&j>0)
- {
-  if(firstString[i-1]==secondString[j-1])
-  {
-   res+=firstString[i-1];
-   i--;
-   j--;
-  }
-  else if ( dp[i-1][j]>dp[i][j-1])
-   {
-    res+=firstString[i-1];
-    i--;
-   }
+    for(int a=0;a<tokens.size();a++)
+    {
+     if(check(tokens[a],i,j,grid))
+     {
+      grid[i][j]=""0""+tokens[a];
+      string ans=""YES"";
+      if(solveMathCrossword(grid,tokens)==""NO"")
+      grid[i][j]=""."";
 
-  else {
-  res+=secondString[j-1];
-  j--;
-
+     }
+    }
+   }
   }
- }
- while(i>0)
- {
-  res+=firstString[i-1];
-  i--;
- }
- while(j>0)
- {
-  res+=secondString[j-1];
-  j--;
- }
- // reverse(res.begin(),res.end());
- string ans;
- for(int i=res.length()-1;i>=0;i--)
- {
-  ans+=res[i];
+
  }
  return ans;
+
 }
-"	
-https://www.codechef.com/manage/ZVZOS/report/6684594	1024170297	100/100	100/100	100/100	100/100	100/100	500/500	{'time': '50:58', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270791114'}	{'time': '48:29', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270790375'}	{'time': '47:09', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270790080'}	{'time': '39:28', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788080'}	{'time': '39:15', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788057'}	{'time': '33:07', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270786456'}	{'time': '27:52', 'problem': 'NCBBR01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270785117'}	{'time': '12:09', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270781138'}						"string findShortestCommonSupersequence(string firstString, string secondString) {
- int x= firstString.length();
- int y= secondString.length();
- vector<vector<int>> dp(x+1,vector<int>(y+1,0));
- for(int i=1;i<=x;i++){
-  for(int j=1;j<=y;j++){
-   if(firstString[i-1]==secondString[j-1]){
-    dp[i][j]=1+dp[i-1][j-1];
-   }
-   else{
-    dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
+int main()
+{
+ int t;
+ cin>>t;
+ for(int i=0;i<t;i++)
+ {
+  int n,m;
+  cin>>n,m;
+  vector<vector<string>>grid;
+  int k;
+  cin>>k;
+  vector<int>tokens(k);
+  for(int x=0;x<k;x++)
+  cin>>tokens[x];
+  for(int a=0;a<n;a++)
+  {
+   for(int b=0;b<m;b++)
+   {
+    cin>>grid[a][b];
    }
   }
+  cout<<solveMathCrossword(grid,tokens);
  }
-  int i=x;
-  int j=y;
-  string res="""";
-  while(i>0 && j>0){
-   if(firstString[i-1]==secondString[j-1]){
-    res+=firstString[i-1];
-   i--;
-   j--;
-   }
-   else if(dp[i-1][j]>dp[i][j-1]){
-    res+=firstString[i-1];
-    i--;
-   }
-   else{
-    res+=secondString[j-1];
-    j--;
-   }
- }
-   while(i>0){
-    res+=firstString[i-1];
-    i--;
-   }
-   while(j>0){
-    res+=secondString[j-1];
-    j--;
-   }
-   reverse(res.begin(),res.end());
-   return res;
+}
+"						
+https://www.codechef.com/manage/FAMOW/report/6683968	https://www.codechef.com/manage/FAMOW/report/6683968				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '64:17', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176993'}	{'time': '58:43', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269174312'}																																	"void solve() {
+    vector<pair<int,string> arr(1,n);
+    for (int i=0;i<arr.size();i++) {
+     if (arr[i]=='+' || arr[i]=='-' || arr[i]=='
+            /'||arr[i]=='*'|| arr[i]=='.'||arr[i]=='B')
+            {"						
+https://www.codechef.com/manage/FAMOW/report/6683992	https://www.codechef.com/manage/FAMOW/report/6683992				100/100	0/100		100/100				100/100													100/100										0/500						{'time': '59:51', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269174717'}	{'time': '47:50', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269170483'}	{'time': '44:46', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269169478'}	{'time': '30:30', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269162670'}	{'time': '28:36', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269161727'}	{'time': '21:10', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269157522'}																													"string solveMathCrossword(vector<vector<string>> &grid,
+    vector<int> &tokens) {
+    int n,m;
+    cin>>n>>m;"						
+https://www.codechef.com/manage/FAMOW/report/6683969	https://www.codechef.com/manage/FAMOW/report/6683969				100/100	100/100		100/100				100/100													100/100										0/500						{'time': '38:50', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269166976'}																																		"
+bool check(int r,vector<vector<string>>&grid,vector<int
+    >&tokens)
+{"						
+https://www.codechef.com/manage/FAMOW/report/6683989	https://www.codechef.com/manage/FAMOW/report/6683989				100/100	0/100		100/100				100/100													100/100										0/500						{'time': '54:08', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173726'}	{'time': '47:05', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269171079'}																																	"void checkTokens(){
 
 }
+string solveMathCrossword(vector<vector<string>> &grid,
+    vector<int> &tokens) {"						
+https://www.codechef.com/manage/FAMOW/report/6683971	https://www.codechef.com/manage/FAMOW/report/6683971				100/100	0/100		100/100				100/100													0/100										0/500						{'time': '43:07', 'problem': 'MATHCROSS2 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269168778'}																																		"string solveMathCrossword(vector<vector<string>> &grid,
+    vector<int> &tokens) {
+    // write your code here
+    int T;"						
+https://www.codechef.com/manage/GQRIW/report/6672574	https://www.codechef.com/manage/GQRIW/report/6672574					100/100									100/100	100/100						100/100							100/100								80/500				{'time': '64:31', 'problem': 'NOKIA C++', 'verdict': 'PAC', 'score': '80', 'tests': '1/6', 'view': 'https://www.codechef.com/viewsolution/1269177147'}	{'time': '52:24', 'problem': 'NOKIA C++', 'verdict': 'PAC', 'score': '80', 'tests': '1/6', 'view': 'https://www.codechef.com/viewsolution/1269172131'}	{'time': '51:11', 'problem': 'NOKIA C++', 'verdict': 'PAC', 'score': '80', 'tests': '1/6', 'view': 'https://www.codechef.com/viewsolution/1269171609'}																																		"#include <bits/stdc++.h>
+using namespace std;
+vector<vector<int>> ans;
+vector<int> num;
+vector<int> curr;
+unordered_set<int> used;
+void generatepermutation(int i,int n){
 
-"	{'code_similarity': [{'Problem': 'NCBBR01', 'Matched User': 'Suryansh Pahuja', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268629514', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'Dhiren Kumar', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268630335', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'Kartik Dua', 'Similarity': '98%', 'Lines': '75', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268631899', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'PRATEEK MALPANI', 'Similarity': '96%', 'Lines': '62', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1269294169', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'ARSHPREET SINGH', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268625439', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'AYUSH PANWAR', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268630983', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'BHIMANSH GROVER', 'Similarity': '99%', 'Lines': '87', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1269284112', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'SPARSH KUMAR', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1270780329', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'DIVAKAR PUROHIT', 'Similarity': '99%', 'Lines': '76', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1270782314', 'Report': '—'}]}
+ if(i == n)
+ {
+  ans.push_back(curr);
+  return;
+ }
+ for(int idx = 0 ; idx < n ; idx++)
+ {
+  if(used.find(num[idx]) == used.end())
+  {
+   curr.push_back(num[idx]);
+   used.insert(num[idx]);
+   generatepermutation(i+1,n);
+   used.erase(num[idx]);
+   curr.pop_back();
+  }
+ }
+}
+int main() {
+ int t;
+ cin >> t;
+ while(t--)
+ {
+ ans.clear();
+ num.clear();
+ curr.clear();
+ used.clear();
+ int n,m;
+ cin >> n >> m;
+  long long rope = -1;
+  for(int i = 1 ; i <= n ; i++){
+   num.push_back(i);
+  }
+  generatepermutation(0,n);
+  for(auto &it : ans)
+  {
+   long long dist = 0;
+   vector<int> pos(n+2,-1);
+   pos[0] = 0;
+   pos[n+1] = n+1;
+   for(auto &node : it)
+   {
+    int left = 0;
+    int right = n+1;
+    for(int i = 0 ; i < node ; i++)
+    {
+     if(pos[i] == -1) continue;
+     left = max(left,pos[i]);
+    }
+    for(int i = node ; i < n+2 ; i++)
+    {
+     if(pos[i] == -1) continue;
+     right = min(right,pos[i]);
+    }
+    pos[node] = node;
+    dist += ((node - left) + (right - node));
+   }
+   if(dist <= m)
+   {
+    rope = max(rope,dist);
+   }
+  }
+  if(rope == -1)
+  {
+   cout << -1;
+   cout << endl;
+   continue;
+  }
+  cout << m - rope;
+  cout << endl;
+ }
+}
+"				
+https://www.codechef.com/manage/GQRIW/report/6683978	https://www.codechef.com/manage/GQRIW/report/6683978					0/100									0/100	100/100						100/100							0/100								0/500																																												
+https://www.codechef.com/manage/GQRIW/report/6683986	https://www.codechef.com/manage/GQRIW/report/6683986					100/100									100/100	100/100						100/100							0/100								0/500				{'time': '64:36', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177186'}	{'time': '64:13', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176975'}	{'time': '63:19', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176433'}																																		"#include <bits/stdc++.h>
+using namespace std;
+
+"				
+https://www.codechef.com/manage/GQRIW/report/6683983	https://www.codechef.com/manage/GQRIW/report/6683983					100/100									100/100	100/100						100/100							100/100								0/500				{'time': '63:09', 'problem': 'NOKIA C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269176379'}	{'time': '60:21', 'problem': 'NOKIA C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269174914'}	{'time': '53:12', 'problem': 'NOKIA C++', 'verdict': 'RE', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269172513'}	{'time': '51:08', 'problem': 'NOKIA C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269171593'}	{'time': '24:19', 'problem': 'NOKIA C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269159440'}																																"#include <bits/stdc++.h>
+using namespace std;
+int ans=0;
+int maxWire=0;"				
+https://www.codechef.com/manage/GQRIW/report/6683984	https://www.codechef.com/manage/GQRIW/report/6683984					100/100									100/100	100/100						100/100							100/100								0/500																																												
+https://www.codechef.com/manage/GQRIW/report/6683985	https://www.codechef.com/manage/GQRIW/report/6683985					100/100									100/100	100/100						100/100							0/100								0/500				{'time': '64:23', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177083'}	{'time': '63:39', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176598'}	{'time': '61:25', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269175455'}	{'time': '56:48', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173745'}	{'time': '53:32', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172619'}	{'time': '35:10', 'problem': 'NOKIA C++', 'verdict': 'WA', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269165063'}	{'time': '34:15', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269164738'}																														"#include <bits/stdc++.h>
+using namespace std;
+
+void minUnusedWire(int N, int M,vector<int>&P,int cut){"				
+https://www.codechef.com/manage/GQRIW/report/6683988	https://www.codechef.com/manage/GQRIW/report/6683988					100/100									0/100	100/100						100/100							100/100								0/500				{'time': '64:35', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269177178'}	{'time': '62:44', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176115'}	{'time': '60:55', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269175275'}																																		"#include <bits/stdc++.h>
+using namespace std;
+int fact(int n){
+"				
+https://www.codechef.com/manage/GQRIW/report/6683970	https://www.codechef.com/manage/GQRIW/report/6683970					100/100									100/100	100/100						100/100							100/100								0/500				{'time': '63:07', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269176376'}	{'time': '62:15', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269175920'}	{'time': '55:13', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173196'}																																		"#include <bits/stdc++.h>
+using namespace std;
+// bool isFeasible(vector<int> &P, int N, int M){
+//     int sum = 0;"				
+https://www.codechef.com/manage/GQRIW/report/6683974	https://www.codechef.com/manage/GQRIW/report/6683974					100/100									100/100	100/100						100/100							0/100								0/500																																												
+https://www.codechef.com/manage/GQRIW/report/6683975	https://www.codechef.com/manage/GQRIW/report/6683975					100/100									100/100	0/100						100/100							100/100								0/500				{'time': '60:05', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269174842'}	{'time': '53:54', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172739'}																																			"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {"				
+https://www.codechef.com/manage/GQRIW/report/6683994	https://www.codechef.com/manage/GQRIW/report/6683994					100/100									100/100	100/100						100/100							100/100								0/500				{'time': '60:20', 'problem': 'NOKIA C++', 'verdict': 'WA', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269174913'}	{'time': '58:01', 'problem': 'NOKIA C++', 'verdict': 'WA', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269173985'}	{'time': '56:52', 'problem': 'NOKIA C++', 'verdict': 'WA', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269173751'}	{'time': '55:59', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173540'}	{'time': '53:25', 'problem': 'NOKIA JAVA', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172570'}	{'time': '52:54', 'problem': 'NOKIA JAVA', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172437'}	{'time': '51:26', 'problem': 'NOKIA JAVA', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269171688'}																														"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {"				
+https://www.codechef.com/manage/GQRIW/report/6683993	https://www.codechef.com/manage/GQRIW/report/6683993					0/100									0/100	100/100						100/100							100/100								0/500				{'time': '59:15', 'problem': 'NOKIA C++', 'verdict': 'WA', 'score': '0', 'tests': '0/6', 'view': 'https://www.codechef.com/viewsolution/1269174436'}	{'time': '58:35', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269174295'}	{'time': '57:20', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173830'}																																		"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {"				
+https://www.codechef.com/manage/GQRIW/report/6683972	https://www.codechef.com/manage/GQRIW/report/6683972					100/100									100/100	100/100						100/100							100/100								0/500				{'time': '55:47', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269173354'}	{'time': '54:14', 'problem': 'NOKIA C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1269172941'}																																			"#include <bits/stdc++.h>
+using namespace std;
+
+int main() {"				
+https://www.codechef.com/manage/GQRIW/report/6683973	https://www.codechef.com/manage/GQRIW/report/6683973					0/100									100/100	0/100						100/100							100/100								500/500				{'time': '31:03', 'problem': 'NOKIA C++', 'verdict': 'AC', 'score': '500', 'tests': '6/6', 'view': 'https://www.codechef.com/viewsolution/1269163065'}																																				"#include <bits/stdc++.h>
+using namespace std;
+
+set <int> dp[31];"				

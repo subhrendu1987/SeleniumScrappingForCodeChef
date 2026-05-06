@@ -11,14 +11,12 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
-
-
-
 from auth import wait_for_manual_login
 ###################################################################################
 ### INPUT TSV FILES SET FIELD NAMES
 FIELD_MAP = {
-    "roll": ["roll", "rollno"],
+    "roll": ["rollno"],                 # ONLY rollno
+    "user_id": ["userid"],              # NEW field
     "contest_id": ["contestid", "contest"],
     "report_id": ["assessmentreportlink", "report", "reportid"]
 }
