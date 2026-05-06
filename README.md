@@ -35,6 +35,10 @@ pip install pdfkit
 * Run `bash extractProblemName.sh <FOLDERNAME>` to extract Problem Titles from a given folder.
 * Run `bash extractProblemName.sh <TSV-FILENAME>` to extract Problem Titles from a given TSV file.
 
+## Fetch evaluated results with Student submissions
+* Provided we know the contestID, and numeric studentID (which can be obtained from the codeChef students portal also)
+* 
+
 ## Fetch student submissions
 * CodeChef uses a general URL for fetching student submission, `https://www.codechef.com/moderate/solutions/<CONTEST_ID>?sort_by=All&sorting_order=asc&language=All&status=All&pcode=<PROBLEM_ID>&handle=<STUDENT_ID>&Submit=GO`
 Therefore, create a file (`CSVs/2C33URLS.tsv`) containing as following 	 
@@ -56,4 +60,6 @@ This tab is used for extracting URL from the actual submissions. CHange cell A1 
 ```
 python3 fetchStudAssessment.py   --input input_le2.tsv   --output output.tsv
 ```
+
+
 

@@ -1,8 +1,169 @@
-Roll	ReportURL	MCQ: PUYBDF03	MCQ: PUYBDF10	MCQ: PUYBDF12	MCQ: PUYBDF22	MCQ: PUYBDF26	MCQ: PUYBDF30	MCQ: PUYBDF32	MCQ: PUYBDF35	MCQ: PUYBDF36	MCQ: PUYBDF46	Programming: HBJRG01	Programming: NCBBR01
-1024170420	https://www.codechef.com/manage/JD14L/report/6684663	0/100	0/100		100/100		100/100			100/100		0/500	
-1024170309	https://www.codechef.com/manage/JD14L/report/5376296	100/100	100/100		100/100		100/100			100/100		0/500	
-1024030079	https://www.codechef.com/manage/JD14L/report/6049133	0/100	0/100		100/100		100/100			0/100		0/500	
-1024030709	https://www.codechef.com/manage/ZVZOS/report/6683772			100/100		100/100		100/100	100/100		100/100		0/500
-1024030086	https://www.codechef.com/manage/ZVZOS/report/6596778			100/100		100/100		100/100	100/100		100/100		0/500
-1024170176	https://www.codechef.com/manage/ZVZOS/report/6676414			100/100		100/100		0/100	100/100		100/100		0/500
-1024170195	https://www.codechef.com/manage/ZVZOS/report/6671776			100/100		100/100		0/100	100/100		100/100		0/500
+ReportURL	Roll	MCQ: PUYBDF12	MCQ: PUYBDF26	MCQ: PUYBDF32	MCQ: PUYBDF35	MCQ: PUYBDF46	Programming: NCBBR01	0	1	2	3	4	5	6	7	8	9	10	11	12	code_NCBBR01	plagScan
+https://www.codechef.com/manage/ZVZOS/report/6684664	1024170423	100/100	100/100	0/100	0/100	0/100	0/500	{'time': '56:05', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270792639'}	{'time': '24:37', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270784104'}												"
+string findShortestCommonSupersequence(string firstString, string secondString) {
+ int T=3;
+ for(int i=0;i <= T;i++)
+ {
+  firstString()='abc','xyz','aabbcc';
+  secondString()='ac','zyx','abcabc';
+  if (firstString.last()==secondString.first())
+  {
+   firstString.last()=secondString.second();
+   firstString.last()=secondstring.first();
+   if(remove value.secondString()==firstString()
+   {
+    return true;
+   }
+   }
+
+ }
+}
+
+"	
+https://www.codechef.com/manage/ZVZOS/report/6683424	1024030084	100/100	100/100	100/100	100/100	0/100	0/500	{'time': '54:44', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792113'}	{'time': '54:35', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270792084'}	{'time': '47:34', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270790118'}	{'time': '46:28', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270790007'}	{'time': '45:40', 'problem': 'NCBBR01 C++', 'verdict': 'WA', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270789763'}									"// void helper(string firstString, string secondString, string &temp, int m,int n){
+//     if(m==0||n==0) return;
+//     for(int i=0;i<n;i++){
+//         if(firstStri)
+//     }
+
+// }
+string findShortestCommonSupersequence(string firstString, string secondString) {
+
+ int m=firstString.size();
+ int n=secondString.size();
+ if(m==0||n==0) return """";
+ int d;
+ string temp="""";
+ string def="""";
+ string first="""";
+ for(int i=0;i<n;i++){
+  if(firstString[m-1]==secondString[i]){
+   d=m-1;
+   for(int k=m-1;k>0;k--){
+    if(secondString[i]==firstString[k-1]){
+     d=k-1;
+    }
+    else {
+     break;
+    }
+   }
+   for(int j=i+1;j<n;j++){
+    temp.push_back(secondString[j]);
+   }
+   break;
+  }
+ }
+ for(int j=0;j<=d;j++){
+  first.push_back(firstString[j]);
+ }
+
+ return first+temp;
+}
+
+"	
+https://www.codechef.com/manage/ZVZOS/report/6684592	1024170294	100/100	100/100	100/100	100/100	100/100	500/500	{'time': '53:38', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270791759'}	{'time': '42:08', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788890'}	{'time': '41:58', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788870'}	{'time': '41:41', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788675'}	{'time': '41:00', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270788595'}	{'time': '40:36', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788378'}	{'time': '40:21', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270788350'}	{'time': '31:54', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270786173'}	{'time': '24:54', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270784304'}	{'time': '21:41', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270783400'}	{'time': '18:12', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270782556'}	{'time': '18:05', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270782545'}	{'time': '14:18', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270781621'}	"string findShortestCommonSupersequence(string firstString, string secondString) {
+ int n=firstString.length();
+ int m=secondString.length();
+
+ vector<vector<int>>dp(n+1,vector<int>(m+1,0));
+
+ for(int i=1;i<=n;i++)
+ {
+
+  for(int j=1;j<=m;j++)
+  {
+   if(firstString[i-1]==secondString[j-1])
+   {
+    dp[i][j]=1+dp[i-1][j-1];
+   }
+   else dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
+  }
+ }
+ int i=n;
+ int j=m;
+ string res="""";
+ while(i>0&&j>0)
+ {
+  if(firstString[i-1]==secondString[j-1])
+  {
+   res+=firstString[i-1];
+   i--;
+   j--;
+  }
+  else if ( dp[i-1][j]>dp[i][j-1])
+   {
+    res+=firstString[i-1];
+    i--;
+   }
+
+  else {
+  res+=secondString[j-1];
+  j--;
+
+  }
+ }
+ while(i>0)
+ {
+  res+=firstString[i-1];
+  i--;
+ }
+ while(j>0)
+ {
+  res+=secondString[j-1];
+  j--;
+ }
+ // reverse(res.begin(),res.end());
+ string ans;
+ for(int i=res.length()-1;i>=0;i--)
+ {
+  ans+=res[i];
+ }
+ return ans;
+}
+"	
+https://www.codechef.com/manage/ZVZOS/report/6684594	1024170297	100/100	100/100	100/100	100/100	100/100	500/500	{'time': '50:58', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270791114'}	{'time': '48:29', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270790375'}	{'time': '47:09', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270790080'}	{'time': '39:28', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788080'}	{'time': '39:15', 'problem': 'NCBBR01 C++', 'verdict': 'AC', 'score': '500', 'tests': '15/15', 'view': 'https://www.codechef.com/viewsolution/1270788057'}	{'time': '33:07', 'problem': 'NCBBR01 C++', 'verdict': 'RE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270786456'}	{'time': '27:52', 'problem': 'NCBBR01 C++', 'verdict': 'TLE', 'score': '0', 'tests': '0/15', 'view': 'https://www.codechef.com/viewsolution/1270785117'}	{'time': '12:09', 'problem': 'NCBBR01 C++', 'verdict': 'CE', 'score': '0', 'tests': '0/1', 'view': 'https://www.codechef.com/viewsolution/1270781138'}						"string findShortestCommonSupersequence(string firstString, string secondString) {
+ int x= firstString.length();
+ int y= secondString.length();
+ vector<vector<int>> dp(x+1,vector<int>(y+1,0));
+ for(int i=1;i<=x;i++){
+  for(int j=1;j<=y;j++){
+   if(firstString[i-1]==secondString[j-1]){
+    dp[i][j]=1+dp[i-1][j-1];
+   }
+   else{
+    dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
+   }
+  }
+ }
+  int i=x;
+  int j=y;
+  string res="""";
+  while(i>0 && j>0){
+   if(firstString[i-1]==secondString[j-1]){
+    res+=firstString[i-1];
+   i--;
+   j--;
+   }
+   else if(dp[i-1][j]>dp[i][j-1]){
+    res+=firstString[i-1];
+    i--;
+   }
+   else{
+    res+=secondString[j-1];
+    j--;
+   }
+ }
+   while(i>0){
+    res+=firstString[i-1];
+    i--;
+   }
+   while(j>0){
+    res+=secondString[j-1];
+    j--;
+   }
+   reverse(res.begin(),res.end());
+   return res;
+
+}
+
+"	{'code_similarity': [{'Problem': 'NCBBR01', 'Matched User': 'Suryansh Pahuja', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268629514', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'Dhiren Kumar', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268630335', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'Kartik Dua', 'Similarity': '98%', 'Lines': '75', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268631899', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'PRATEEK MALPANI', 'Similarity': '96%', 'Lines': '62', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1269294169', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'ARSHPREET SINGH', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268625439', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'AYUSH PANWAR', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1268630983', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'BHIMANSH GROVER', 'Similarity': '99%', 'Lines': '87', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1269284112', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'SPARSH KUMAR', 'Similarity': '99%', 'Lines': '63', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1270780329', 'Report': '—'}, {'Problem': 'NCBBR01', 'Matched User': 'DIVAKAR PUROHIT', 'Similarity': '99%', 'Lines': '76', 'My Sol.': 'https://www.codechef.com/viewsolution/1270788057', 'Their Sol.': 'https://www.codechef.com/viewsolution/1270782314', 'Report': '—'}]}
