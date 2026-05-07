@@ -7,7 +7,7 @@ sudo apt install chromium-chromedriver
 pip install selenium webdriver-manager bs4
 pip install pdfkit
 ```
-## Fetch Contests
+## Fetch Contests Questions
 * Run `python3 fetchContestQuestionTable.py`
 	- Login with your credentials and press enter in the shell
 	- This will extract table sources in the `data/`
@@ -20,6 +20,15 @@ pip install pdfkit
 	- this will place the convert the problem statements into PDF and place them in `contest/`
 * To merge PDFs, you can use `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=merged.pdf pdfs/*.pdf`
 
+## Fetch evaluated results with Student submissions
+* Provided we know the contestID, and numeric studentID (which can be obtained from the codeChef students portal also)
+* Download the report shared by the CodeChef team in `TSV` format (Say the name is `CSVs/StudList-Full.tsv`)
+* Check the Header section and update the `### INPUT TSV FILES SET FIELD NAMES` section with appropriate column name
+* Filter out the section IDs based on group numbers (e.g. `awk 'NR==2 || /2C33|2C73|2C13|2C14/' CSVs/StudList-Full.tsv > CSVs/MyGroup.tsv `)
+* Take this output file (`MyGroup.tsv`) as the input of next step.
+```
+python3 fetchSubmissionHistory.py --input CSVs/MyGroup.tsv --output output.tsv
+```
 ## Fetch Regular Excercises
 * (If required) Open `Codechef Portal` and update the `CSVs/CodechefTopicURL.tsv` with latest URL of Topics, subtopics, and their base URLs from the course homepage.
 
@@ -35,16 +44,7 @@ pip install pdfkit
 * Run `bash extractProblemName.sh <FOLDERNAME>` to extract Problem Titles from a given folder.
 * Run `bash extractProblemName.sh <TSV-FILENAME>` to extract Problem Titles from a given TSV file.
 
-## Fetch evaluated results with Student submissions
-* Provided we know the contestID, and numeric studentID (which can be obtained from the codeChef students portal also)
-* Download the report shared by the CodeChef team in `TSV` format (Say the name is `CSVs/StudList-Full.tsv`)
-* Check the Header section and update the `### INPUT TSV FILES SET FIELD NAMES` section with appropriate column name
-* Filter out the section IDs based on group numbers (e.g. `awk 'NR==2 || /2C33|2C73|2C13|2C14/' CSVs/StudList-Full.tsv > CSVs/MyGroup.tsv `)
-* Take this output file (`MyGroup.tsv`) as the input of next step.
-```
-python3 fetchSubmissionHistory.py --input CSVs/MyGroup.tsv --output output.tsv
-```
-
+# In `Older Codes` 
 ## Fetch student submissions
 * CodeChef uses a general URL for fetching student submission, `https://www.codechef.com/moderate/solutions/<CONTEST_ID>?sort_by=All&sorting_order=asc&language=All&status=All&pcode=<PROBLEM_ID>&handle=<STUDENT_ID>&Submit=GO`
 Therefore, create a file (`CSVs/2C33URLS.tsv`) containing as following 	 
@@ -66,6 +66,3 @@ This tab is used for extracting URL from the actual submissions. CHange cell A1 
 ```
 python3 fetchStudAssessment.py   --input input_le2.tsv   --output output.tsv
 ```
-
-
-
