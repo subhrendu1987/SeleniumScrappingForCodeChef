@@ -13,10 +13,10 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 from auth import wait_for_manual_login
 ###################################################################################
-### INPUT TSV FILES SET FIELD NAMES
+### INPUT TSV FILES SET FIELD NAMES AS SCHEMA. USE LOWERCASE LETTERS AND WITHOUT SPACE
 FIELD_MAP = {
-    "roll": ["rollno"],                 # ONLY rollno
-    "user_id": ["userid"],              # NEW field
+    "roll": ["rollno"],              
+    "user_id": ["userid"],
     "contest_id": ["contestid", "contest"],
     "report_id": ["assessmentreportlink", "report", "reportid"]
 }
@@ -225,7 +225,11 @@ def read_input_tsv(file_path, skip_lines=0):
 
         # ✅ resolve once
         schema = resolve_schema(headers)
-
+        print("\n🔍 Detected Schema Mapping:\n")
+        for std_key, actual_key in schema.items():
+            print(f"{std_key:12} -> {actual_key}")
+        # ✅ Show missing required fields
+        missing = [k for k in FIELD_MAP if k not in schema]
         for row in reader:
             if not any(row):
                 continue
@@ -241,11 +245,40 @@ def read_input_tsv(file_path, skip_lines=0):
             data.append({
                 "roll": row_dict.get(schema.get("roll", ""), ""),
                 "contest_id": row_dict.get(schema.get("contest_id", ""), ""),
-                "report_id": row_dict.get(schema.get("report_id", ""), ""),
+                "user_id": row_dict.get(schema.get("user_id", ""), ""),
                 "_raw": row_dict   # optional: keep full data
             })
 
     return data
+###################################################################################
+def preview(dt):
+    # ✅ Preview first 5 rows
+    print("\n🔍 Preview of first 5 rows (Check Schema):\n")
+    #print(list(dt[0].keys()))
+    for i, row in enumerate(dt[:5], start=1):
+        roll = row["roll"]
+        contestID=row["contest_id"]
+        userID=row["user_id"]
+        reportURL = f"https://www.codechef.com/manage/{contestID}/report/{userID}"
+        print(
+            f"{i}. "
+            f"Roll={roll} | "
+            f"ContestID={contestID} | "
+            f"UserID={userID} | "
+            f"ReportURL={reportURL}"
+        )
+
+    # ✅ Ask for confirmation
+    confirm = input("\nContinue processing? (y/n): ").strip().lower()
+
+    if confirm not in ("y", "yes"):
+        print("❌ Aborted by user.")
+        if dt:
+            print("Available row headers:\n")
+            print(list(dt[0].keys()))
+        return False
+    else:
+        return True
 ###################################################################################
 def write_output_tsv(output_file, rows):
     if not rows:
@@ -320,20 +353,23 @@ def parse_report_url(report_url):
 ###################################################################################
 def main():
     args = parse_args()
-
+    input_rows = read_input_tsv(args.input)
+    ### Show first few data to User and get approval
+    checkList1=preview(input_rows)
+    if not checkList1:
+        return;
+    output_rows = []
+    rechecklist = []
+    ### Start Selenium processing of input_rows
     driver = setup_driver()
     wait_for_manual_login(driver)
 
-    input_rows = read_input_tsv(args.input)
-
-    output_rows = []
-    rechecklist = []
-
     for i, row in enumerate(input_rows):
         roll = row["roll"]
-        reportURL = row["report_id"]  # already full URL
-        # ✅ extract IDs only if you need them
-        contestID, userID = parse_report_url(reportURL)
+        contestID=row["contest_id"]
+        userID=row["user_id"]
+        reportURL = f"https://www.codechef.com/manage/{contestID}/report/{userID}"
+
         print(f"➡ Processing Roll: {roll} {i+1}/{len(input_rows)}")
         html = fetch_html(driver, reportURL)
         subHist = parse_submission_history(html)
