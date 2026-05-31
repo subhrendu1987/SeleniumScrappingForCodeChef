@@ -13,12 +13,15 @@ from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 from auth import wait_for_manual_login
 ###################################################################################
+### Example command: `python3 fetchSubmissionHistory.py --input CSVs/StudList-Full-LE2.tsv --output CSVs/Kapil-le2.tsv`
+
+###################################################################################
 ### INPUT TSV FILES SET FIELD NAMES AS SCHEMA. USE LOWERCASE LETTERS AND WITHOUT SPACE
 FIELD_MAP = {
-    "roll": ["rollno"],              
-    "user_id": ["userid"],
-    "contest_id": ["contestid", "contest"],
-    "report_id": ["assessmentreportlink", "report", "reportid"]
+    "roll": ["rollno","RollNo"],              
+    "user_id": ["userid","UserID"],
+    "contest_id": ["contestid", "contest","ContestID"],
+    "report_id": ["assessmentreportlink", "report", "reportid","AssessmentReportLink"]
 }
 ###################################################################################
 # Extract code from assessment page
@@ -151,18 +154,25 @@ def getReportTable(html):
         if not code:
             continue
 
-        # default fallback (just in case)
         if not qtype:
             qtype = "Unknown"
 
-        # 🎯 extract score
-        score_div = prob.find("div", class_=re.compile(r"_score_"))
-        if not score_div:
-            continue
+        # ✅ detect unattempted
+        is_unattempted = any(
+            "Unattempted" in tag.get_text(strip=True)
+            for tag in tags
+        )
 
-        score = score_div.get_text(strip=True).replace(" ", "")
+        if is_unattempted:
+            score = "NA"
+        else:
+            score_div = prob.find("div", class_=re.compile(r"_score_"))
 
-        # 🔥 new key format
+            if not score_div:
+                continue
+
+            score = score_div.get_text(strip=True).replace(" ", "")
+
         key = f"{qtype}: {code}"
 
         result[key] = score
@@ -274,6 +284,8 @@ def preview(dt):
     if confirm not in ("y", "yes"):
         print("❌ Aborted by user.")
         if dt:
+            print ("Use following Headers instead")
+            print("\t".join(values[0] for values in FIELD_MAP.values()))
             print("Available row headers:\n")
             print(list(dt[0].keys()))
         return False

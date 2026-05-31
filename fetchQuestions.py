@@ -11,7 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-CSV_FILE = "grouped_problems.tsv"
+CSV_FILE = "CSVs/grouped_problems.tsv"
 OUTPUT_DIR = "contest"
 
 #BASE_URL = "https://www.codechef.com/THADAA/problems/{}" # Provided by Codechef 
@@ -63,7 +63,7 @@ def wait_for_manual_login(driver):
     input("👉 Press ENTER after login...")
 
 
-def read_problem_ids(DOWNLOAD_MCQ):
+def read_problem_ids(DOWNLOAD_MCQ=True):
     problem_ids = set()
 
     with open(CSV_FILE, "r", encoding="utf-8") as f:
@@ -132,19 +132,19 @@ def save_problem(driver, problem_id, only_new=False):
 
     except Exception as e:
         print(f"❌ Failed {problem_id}: {e}")
-        FAILED_TO_DOWNLOAD.add(problem_id)
+        FAILED_TO_DOWNLOAD.append(problem_id)
 
 
 def main():
     args = parse_args()
     DOWNLOAD_ONLY_NEW = args.only_new  # 🔥 flag
     DOWNLOAD_MCQ=args.mcq
-    driver = setup_driver()
     problem_ids = read_problem_ids(DOWNLOAD_MCQ)
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    wait_for_manual_login(driver)
-    problem_ids = read_problem_ids()
+    print("Questions:",len(problem_ids))
     print("Problems:",problem_ids)
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    driver = setup_driver()
+    wait_for_manual_login(driver)
     count = 0
     for pid in problem_ids:
         if MAX_DOWNLOADS != -1 and count >= MAX_DOWNLOADS:
